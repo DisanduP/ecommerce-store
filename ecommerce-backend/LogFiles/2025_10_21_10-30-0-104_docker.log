@@ -1,0 +1,1007 @@
+2025-10-21T05:57:30.8295339Z Container start method called.
+2025-10-21T05:57:30.9419144Z Establishing network.
+2025-10-21T05:57:30.9424446Z Pulling image: appsvc/node:20-lts_20250724.2.tuxprod.
+2025-10-21T05:58:06.4173246Z Image appsvc/node:20-lts_20250724.2.tuxprod is pulled from registry mcr.microsoft.com
+2025-10-21T05:58:06.4174525Z Container is starting.
+2025-10-21T05:58:06.4202483Z Establishing user namespace if not established already.
+2025-10-21T05:58:06.4213511Z Establishing network if not established already.
+2025-10-21T05:58:06.4215218Z Mounting volumes.
+2025-10-21T05:58:06.4219842Z Nested mountpoint data
+2025-10-21T05:58:06.4257400Z Nested mountpoint volatile/logs
+2025-10-21T05:58:06.4305256Z Nested mountpoint 
+2025-10-21T05:58:06.4389699Z Nested mountpoint 
+2025-10-21T05:58:06.4520982Z Nested mountpoint 
+2025-10-21T05:58:06.4579579Z Nested mountpoint 
+2025-10-21T05:58:10.7185697Z Creating container.
+2025-10-21T05:58:10.7192718Z Creating pipes for streaming container io.
+2025-10-21T05:58:10.7207419Z Creating stdout named pipe at /podr/container/pipe/8ab9501cb42a_ecommerce-backend-1761025938/stdout_d12f6a09098a4c60b9f4d1b955a79fcf.
+2025-10-21T05:58:10.7251304Z Successfully created stdout named pipe at: /podr/container/pipe/8ab9501cb42a_ecommerce-backend-1761025938/stdout_d12f6a09098a4c60b9f4d1b955a79fcf.
+2025-10-21T05:58:10.7252623Z Opening named pipe /podr/container/pipe/8ab9501cb42a_ecommerce-backend-1761025938/stdout_d12f6a09098a4c60b9f4d1b955a79fcf for reading in non-blocking mode.
+2025-10-21T05:58:10.7253949Z Successfully opened named pipe: /podr/container/pipe/8ab9501cb42a_ecommerce-backend-1761025938/stdout_d12f6a09098a4c60b9f4d1b955a79fcf.
+2025-10-21T05:58:10.7254989Z Successfully removed non-blocking flag from /podr/container/pipe/8ab9501cb42a_ecommerce-backend-1761025938/stdout_d12f6a09098a4c60b9f4d1b955a79fcf.
+2025-10-21T05:58:10.7256280Z Creating stderr named pipe at /podr/container/pipe/8ab9501cb42a_ecommerce-backend-1761025938/stderr_c82e10db99294a5ea1d0d34c90d7877e.
+2025-10-21T05:58:10.7257904Z Successfully created stderr named pipe at: /podr/container/pipe/8ab9501cb42a_ecommerce-backend-1761025938/stderr_c82e10db99294a5ea1d0d34c90d7877e.
+2025-10-21T05:58:10.7259065Z Opening named pipe /podr/container/pipe/8ab9501cb42a_ecommerce-backend-1761025938/stderr_c82e10db99294a5ea1d0d34c90d7877e for reading in non-blocking mode.
+2025-10-21T05:58:10.7260468Z Successfully opened named pipe: /podr/container/pipe/8ab9501cb42a_ecommerce-backend-1761025938/stderr_c82e10db99294a5ea1d0d34c90d7877e.
+2025-10-21T05:58:10.7261532Z Successfully removed non-blocking flag from /podr/container/pipe/8ab9501cb42a_ecommerce-backend-1761025938/stderr_c82e10db99294a5ea1d0d34c90d7877e.
+2025-10-21T05:58:10.7262867Z Creating container with image: appsvc/node:20-lts_20250724.2.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20250724.2.tuxprod
+2025-10-21T05:58:11.1114752Z Starting container: 8ab9501cb42a_ecommerce-backend-1761025938.
+2025-10-21T05:58:11.1345128Z Starting watchers and probes.
+2025-10-21T05:58:11.1368832Z Starting metrics collection.
+2025-10-21T05:58:11.1370303Z Container is running.
+2025-10-21T05:58:11.1705647Z Container start method finished after 40340 ms.
+2025-10-21T05:58:18.3932916Z Container has finished running with exit code: 1.
+2025-10-21T05:58:18.3971775Z Container is terminating. Grace period: 5 seconds.
+2025-10-21T05:58:18.4049195Z Stop and delete container. Retry count = 0
+2025-10-21T05:58:18.4059047Z Stopping container: 8ab9501cb42a_ecommerce-backend-1761025938.
+2025-10-21T05:58:18.4493132Z Deleting container: 8ab9501cb42a_ecommerce-backend-1761025938. Retry count = 0
+2025-10-21T05:58:18.9438426Z Container spec TerminationMessagePolicy  path 
+2025-10-21T05:58:18.9474768Z Container is terminated. Total time elapsed: 549 ms.
+2025-10-21T05:58:18.9481352Z Site container: ecommerce-backend-1761025938 terminated during site startup.
+2025-10-21T05:58:18.9523864Z Site startup probe failed after 7.7336261 seconds.
+2025-10-21T05:58:18.9758482Z Failed to start site. Revert by stopping site.
+2025-10-21T05:58:18.9860507Z Site: ecommerce-backend-1761025938 stopped.
+2025-10-21T05:58:27.791Z ERROR - DockerApiException: Docker API responded with status code=NotFound, response={"message":"manifest for 10.1.0.6:13209/appsvc/node:20-lts_20250724.2.tuxprod not found: manifest unknown: manifest unknown"}
+
+2025-10-21T05:58:28.006Z ERROR - DockerApiException: Docker API responded with status code=NotFound, response={"message":"manifest for 10.1.0.5:13209/appsvc/node:20-lts_20250724.2.tuxprod not found: manifest unknown: manifest unknown"}
+
+2025-10-21T05:58:28.349Z INFO  - 20-lts_20250724.2.tuxprod Pulling from appsvc/node
+2025-10-21T05:58:28.358Z INFO  - c19952135643 Pulling fs layer
+2025-10-21T05:58:28.367Z INFO  - b49b2c83cf45 Pulling fs layer
+2025-10-21T05:58:28.369Z INFO  - a7350ec49683 Pulling fs layer
+2025-10-21T05:58:28.370Z INFO  - ca64976d1f75 Pulling fs layer
+2025-10-21T05:58:28.377Z INFO  - 9c231cb2d468 Pulling fs layer
+2025-10-21T05:58:28.379Z INFO  - 6d5ed858bc79 Pulling fs layer
+2025-10-21T05:58:28.380Z INFO  - b147e1d819b6 Pulling fs layer
+2025-10-21T05:58:28.381Z INFO  - bddeee446dea Pulling fs layer
+2025-10-21T05:58:28.383Z INFO  - 3bba0ee51794 Pulling fs layer
+2025-10-21T05:58:28.384Z INFO  - 5b5c68b4e022 Pulling fs layer
+2025-10-21T05:58:28.384Z INFO  - 589fad460b75 Pulling fs layer
+2025-10-21T05:58:28.386Z INFO  - a4ac82e1650a Pulling fs layer
+2025-10-21T05:58:28.388Z INFO  - 6e652537f0de Pulling fs layer
+2025-10-21T05:58:28.388Z INFO  - 4f4fb700ef54 Pulling fs layer
+2025-10-21T05:58:28.391Z INFO  - 70b2d1c62102 Pulling fs layer
+2025-10-21T05:58:28.393Z INFO  - 81114daeece3 Pulling fs layer
+2025-10-21T05:58:28.394Z INFO  - 72560126db61 Pulling fs layer
+2025-10-21T05:58:28.401Z INFO  - b4ee02498c51 Pulling fs layer
+2025-10-21T05:58:28.402Z INFO  - 9f7642f5d897 Pulling fs layer
+2025-10-21T05:58:28.403Z INFO  - 064a93d404d8 Pulling fs layer
+2025-10-21T05:58:28.404Z INFO  - 9078bcfaabdd Pulling fs layer
+2025-10-21T05:58:28.404Z INFO  - 8367cb93fd79 Pulling fs layer
+2025-10-21T05:58:28.405Z INFO  - 432802c32c40 Pulling fs layer
+2025-10-21T05:58:28.406Z INFO  - b5ee41dce4d1 Pulling fs layer
+2025-10-21T05:58:28.409Z INFO  - 299358e274fc Pulling fs layer
+2025-10-21T05:58:28.411Z INFO  - a0f687a8a43e Pulling fs layer
+2025-10-21T05:58:28.420Z INFO  - f6668cf6fc4f Pulling fs layer
+2025-10-21T05:58:28.425Z INFO  - cab9518eb753 Pulling fs layer
+2025-10-21T05:58:28.430Z INFO  - f9717d513d08 Pulling fs layer
+2025-10-21T05:58:28.431Z INFO  - 81d0cf6a6204 Pulling fs layer
+2025-10-21T05:58:28.434Z INFO  - e705a3b12771 Pulling fs layer
+2025-10-21T05:58:28.435Z INFO  - cdcdb6bbda74 Pulling fs layer
+2025-10-21T05:58:28.436Z INFO  - 9078bcfaabdd Waiting
+2025-10-21T05:58:28.451Z INFO  - 8367cb93fd79 Waiting
+2025-10-21T05:58:28.452Z INFO  - 432802c32c40 Waiting
+2025-10-21T05:58:28.455Z INFO  - b5ee41dce4d1 Waiting
+2025-10-21T05:58:28.456Z INFO  - 299358e274fc Waiting
+2025-10-21T05:58:28.457Z INFO  - a0f687a8a43e Waiting
+2025-10-21T05:58:28.458Z INFO  - f6668cf6fc4f Waiting
+2025-10-21T05:58:28.459Z INFO  - cab9518eb753 Waiting
+2025-10-21T05:58:28.460Z INFO  - f9717d513d08 Waiting
+2025-10-21T05:58:28.464Z INFO  - 81d0cf6a6204 Waiting
+2025-10-21T05:58:28.469Z INFO  - 3c56665f14df Pulling fs layer
+2025-10-21T05:58:28.470Z INFO  - 6076b5261919 Pulling fs layer
+2025-10-21T05:58:28.471Z INFO  - cfb2442eec7a Pulling fs layer
+2025-10-21T05:58:28.474Z INFO  - c7bf2b05e76c Pulling fs layer
+2025-10-21T05:58:28.480Z INFO  - 9e40ee8f5c7c Pulling fs layer
+2025-10-21T05:58:28.481Z INFO  - e705a3b12771 Waiting
+2025-10-21T05:58:28.483Z INFO  - cdcdb6bbda74 Waiting
+2025-10-21T05:58:28.484Z INFO  - 3c56665f14df Waiting
+2025-10-21T05:58:28.485Z INFO  - 6076b5261919 Waiting
+2025-10-21T05:58:28.486Z INFO  - cfb2442eec7a Waiting
+2025-10-21T05:58:28.487Z INFO  - c7bf2b05e76c Waiting
+2025-10-21T05:58:28.488Z INFO  - 9e40ee8f5c7c Waiting
+2025-10-21T05:58:28.613Z INFO  - 5b5c68b4e022 Downloading 3KB / 10KB
+2025-10-21T05:58:28.614Z INFO  - 6d5ed858bc79 Downloading 3KB / 39KB
+2025-10-21T05:58:28.619Z INFO  - 5b5c68b4e022 Downloading 10KB / 10KB
+2025-10-21T05:58:28.620Z INFO  - 6d5ed858bc79 Downloading 39KB / 39KB
+2025-10-21T05:58:28.620Z INFO  - 5b5c68b4e022 Verifying Checksum
+2025-10-21T05:58:28.620Z INFO  - 5b5c68b4e022 Download complete
+2025-10-21T05:58:28.620Z INFO  - 6d5ed858bc79 Verifying Checksum
+2025-10-21T05:58:28.622Z INFO  - 6d5ed858bc79 Download complete
+2025-10-21T05:58:28.645Z INFO  - b147e1d819b6 Downloading 3KB / 10KB
+2025-10-21T05:58:28.649Z INFO  - b147e1d819b6 Downloading 10KB / 10KB
+2025-10-21T05:58:28.650Z INFO  - b147e1d819b6 Verifying Checksum
+2025-10-21T05:58:28.650Z INFO  - b147e1d819b6 Download complete
+2025-10-21T05:58:28.657Z INFO  - 9f7642f5d897 Downloading 126B / 126B
+2025-10-21T05:58:28.660Z INFO  - 9f7642f5d897 Verifying Checksum
+2025-10-21T05:58:28.662Z INFO  - 9f7642f5d897 Download complete
+2025-10-21T05:58:28.721Z INFO  - ca64976d1f75 Downloading 387B / 387B
+2025-10-21T05:58:28.726Z INFO  - ca64976d1f75 Verifying Checksum
+2025-10-21T05:58:28.726Z INFO  - ca64976d1f75 Download complete
+2025-10-21T05:58:28.749Z INFO  - b49b2c83cf45 Downloading 2MB / 35MB
+2025-10-21T05:58:28.752Z INFO  - 4f4fb700ef54 Downloading 32B / 32B
+2025-10-21T05:58:28.770Z INFO  - 4f4fb700ef54 Verifying Checksum
+2025-10-21T05:58:28.771Z INFO  - 4f4fb700ef54 Download complete
+2025-10-21T05:58:28.777Z INFO  - 9c231cb2d468 Downloading 654KB / 1MB
+2025-10-21T05:58:28.792Z INFO  - bddeee446dea Downloading 3KB / 14KB
+2025-10-21T05:58:28.804Z INFO  - b4ee02498c51 Downloading 1MB / 16MB
+2025-10-21T05:58:28.809Z INFO  - c19952135643 Downloading 4MB / 46MB
+2025-10-21T05:58:28.825Z INFO  - bddeee446dea Downloading 14KB / 14KB
+2025-10-21T05:58:28.833Z INFO  - 9c231cb2d468 Verifying Checksum
+2025-10-21T05:58:28.834Z INFO  - 9c231cb2d468 Download complete
+2025-10-21T05:58:28.835Z INFO  - bddeee446dea Verifying Checksum
+2025-10-21T05:58:28.837Z INFO  - bddeee446dea Download complete
+2025-10-21T05:58:28.837Z INFO  - 6e652537f0de Verifying Checksum
+2025-10-21T05:58:28.837Z INFO  - 6e652537f0de Download complete
+2025-10-21T05:58:29.013Z INFO  - a4ac82e1650a Downloading 174KB / 1MB
+2025-10-21T05:58:29.015Z INFO  - 3bba0ee51794 Downloading 238KB / 281KB
+2025-10-21T05:58:29.017Z INFO  - 3bba0ee51794 Downloading 281KB / 281KB
+2025-10-21T05:58:29.017Z INFO  - 3bba0ee51794 Verifying Checksum
+2025-10-21T05:58:29.020Z INFO  - 3bba0ee51794 Download complete
+2025-10-21T05:58:29.020Z INFO  - 72560126db61 Downloading 2MB / 11MB
+2025-10-21T05:58:29.025Z INFO  - b4ee02498c51 Downloading 4MB / 16MB
+2025-10-21T05:58:29.025Z INFO  - a4ac82e1650a Verifying Checksum
+2025-10-21T05:58:29.025Z INFO  - a4ac82e1650a Download complete
+2025-10-21T05:58:29.027Z INFO  - 72560126db61 Downloading 3MB / 11MB
+2025-10-21T05:58:29.027Z INFO  - c19952135643 Downloading 8MB / 46MB
+2025-10-21T05:58:29.069Z INFO  - a7350ec49683 Downloading 574KB / 3MB
+2025-10-21T05:58:29.109Z INFO  - 70b2d1c62102 Downloading 2MB / 45MB
+2025-10-21T05:58:29.113Z INFO  - 72560126db61 Verifying Checksum
+2025-10-21T05:58:29.113Z INFO  - 72560126db61 Download complete
+2025-10-21T05:58:29.114Z INFO  - b49b2c83cf45 Downloading 7MB / 35MB
+2025-10-21T05:58:29.156Z INFO  - 9078bcfaabdd Downloading 948B / 948B
+2025-10-21T05:58:29.157Z INFO  - 9078bcfaabdd Verifying Checksum
+2025-10-21T05:58:29.162Z INFO  - 9078bcfaabdd Download complete
+2025-10-21T05:58:29.215Z INFO  - 589fad460b75 Verifying Checksum
+2025-10-21T05:58:29.215Z INFO  - 589fad460b75 Download complete
+2025-10-21T05:58:29.261Z INFO  - 70b2d1c62102 Downloading 3MB / 45MB
+2025-10-21T05:58:29.302Z INFO  - c19952135643 Downloading 11MB / 46MB
+2025-10-21T05:58:29.316Z INFO  - a7350ec49683 Verifying Checksum
+2025-10-21T05:58:29.316Z INFO  - a7350ec49683 Download complete
+2025-10-21T05:58:29.356Z INFO  - 81114daeece3 Downloading 4MB / 46MB
+2025-10-21T05:58:29.356Z INFO  - 064a93d404d8 Verifying Checksum
+2025-10-21T05:58:29.358Z INFO  - 064a93d404d8 Download complete
+2025-10-21T05:58:29.404Z INFO  - b4ee02498c51 Verifying Checksum
+2025-10-21T05:58:29.404Z INFO  - b4ee02498c51 Download complete
+2025-10-21T05:58:29.442Z INFO  - 432802c32c40 Downloading 139B / 139B
+2025-10-21T05:58:29.476Z INFO  - 432802c32c40 Verifying Checksum
+2025-10-21T05:58:29.476Z INFO  - 432802c32c40 Download complete
+2025-10-21T05:58:29.477Z INFO  - 8367cb93fd79 Downloading 1KB / 1KB
+2025-10-21T05:58:29.478Z INFO  - 8367cb93fd79 Verifying Checksum
+2025-10-21T05:58:29.478Z INFO  - 8367cb93fd79 Download complete
+2025-10-21T05:58:29.497Z INFO  - cab9518eb753 Downloading 151B / 151B
+2025-10-21T05:58:29.516Z INFO  - a0f687a8a43e Downloading 1KB / 1KB
+2025-10-21T05:58:29.627Z INFO  - cab9518eb753 Verifying Checksum
+2025-10-21T05:58:29.627Z INFO  - cab9518eb753 Download complete
+2025-10-21T05:58:29.627Z INFO  - a0f687a8a43e Verifying Checksum
+2025-10-21T05:58:29.627Z INFO  - a0f687a8a43e Download complete
+2025-10-21T05:58:29.627Z INFO  - 81114daeece3 Downloading 15MB / 46MB
+2025-10-21T05:58:29.627Z INFO  - c19952135643 Downloading 18MB / 46MB
+2025-10-21T05:58:29.627Z INFO  - f9717d513d08 Downloading 13KB / 13KB
+2025-10-21T05:58:29.627Z INFO  - f9717d513d08 Verifying Checksum
+2025-10-21T05:58:29.627Z INFO  - f9717d513d08 Download complete
+2025-10-21T05:58:29.627Z INFO  - 70b2d1c62102 Downloading 9MB / 45MB
+2025-10-21T05:58:29.627Z INFO  - 299358e274fc Downloading 1KB / 1KB
+2025-10-21T05:58:29.627Z INFO  - 299358e274fc Verifying Checksum
+2025-10-21T05:58:29.627Z INFO  - 299358e274fc Download complete
+2025-10-21T05:58:29.633Z INFO  - 70b2d1c62102 Downloading 12MB / 45MB
+2025-10-21T05:58:29.634Z INFO  - f6668cf6fc4f Downloading 3KB / 3KB
+2025-10-21T05:58:29.634Z INFO  - f6668cf6fc4f Verifying Checksum
+2025-10-21T05:58:29.635Z INFO  - f6668cf6fc4f Download complete
+2025-10-21T05:58:29.635Z INFO  - b5ee41dce4d1 Downloading 526KB / 67MB
+2025-10-21T05:58:29.712Z INFO  - 81d0cf6a6204 Downloading 1KB / 1KB
+2025-10-21T05:58:29.712Z INFO  - 81d0cf6a6204 Verifying Checksum
+2025-10-21T05:58:29.712Z INFO  - 81d0cf6a6204 Download complete
+2025-10-21T05:58:29.720Z INFO  - e705a3b12771 Downloading 269B / 269B
+2025-10-21T05:58:29.720Z INFO  - e705a3b12771 Verifying Checksum
+2025-10-21T05:58:29.727Z INFO  - e705a3b12771 Download complete
+2025-10-21T05:58:29.728Z INFO  - cdcdb6bbda74 Downloading 269B / 269B
+2025-10-21T05:58:29.728Z INFO  - 3c56665f14df Downloading 124B / 124B
+2025-10-21T05:58:29.729Z INFO  - cdcdb6bbda74 Verifying Checksum
+2025-10-21T05:58:29.729Z INFO  - cdcdb6bbda74 Download complete
+2025-10-21T05:58:29.747Z INFO  - 3c56665f14df Verifying Checksum
+2025-10-21T05:58:29.747Z INFO  - 3c56665f14df Download complete
+2025-10-21T05:58:29.760Z INFO  - 6076b5261919 Downloading 416B / 416B
+2025-10-21T05:58:29.760Z INFO  - 6076b5261919 Verifying Checksum
+2025-10-21T05:58:29.760Z INFO  - 6076b5261919 Download complete
+2025-10-21T05:58:29.796Z INFO  - 81114daeece3 Downloading 22MB / 46MB
+2025-10-21T05:58:29.817Z INFO  - 9e40ee8f5c7c Downloading 133B / 133B
+2025-10-21T05:58:29.817Z INFO  - 9e40ee8f5c7c Verifying Checksum
+2025-10-21T05:58:29.817Z INFO  - 9e40ee8f5c7c Download complete
+2025-10-21T05:58:29.858Z INFO  - 81114daeece3 Downloading 30MB / 46MB
+2025-10-21T05:58:29.858Z INFO  - c19952135643 Downloading 29MB / 46MB
+2025-10-21T05:58:29.858Z INFO  - b49b2c83cf45 Downloading 31MB / 35MB
+2025-10-21T05:58:29.879Z INFO  - cfb2442eec7a Downloading 1KB / 1KB
+2025-10-21T05:58:29.897Z INFO  - cfb2442eec7a Verifying Checksum
+2025-10-21T05:58:29.897Z INFO  - cfb2442eec7a Download complete
+2025-10-21T05:58:29.925Z INFO  - b5ee41dce4d1 Downloading 9MB / 67MB
+2025-10-21T05:58:29.925Z INFO  - b49b2c83cf45 Verifying Checksum
+2025-10-21T05:58:29.925Z INFO  - b49b2c83cf45 Download complete
+2025-10-21T05:58:29.970Z INFO  - c19952135643 Downloading 32MB / 46MB
+2025-10-21T05:58:30.006Z INFO  - c7bf2b05e76c Downloading 1MB / 1MB
+2025-10-21T05:58:30.006Z INFO  - c7bf2b05e76c Verifying Checksum
+2025-10-21T05:58:30.007Z INFO  - c7bf2b05e76c Download complete
+2025-10-21T05:58:30.218Z INFO  - c19952135643 Downloading 33MB / 46MB
+2025-10-21T05:58:30.429Z INFO  - 81114daeece3 Downloading 39MB / 46MB
+2025-10-21T05:58:30.439Z INFO  - b5ee41dce4d1 Downloading 15MB / 67MB
+2025-10-21T05:58:30.512Z INFO  - c19952135643 Download complete
+2025-10-21T05:58:30.562Z INFO  - b5ee41dce4d1 Downloading 20MB / 67MB
+2025-10-21T05:58:30.667Z INFO  - b5ee41dce4d1 Downloading 21MB / 67MB
+2025-10-21T05:58:30.811Z INFO  - 70b2d1c62102 Downloading 28MB / 45MB
+2025-10-21T05:58:30.820Z INFO  - 81114daeece3 Downloading 45MB / 46MB
+2025-10-21T05:58:30.868Z INFO  - 81114daeece3 Verifying Checksum
+2025-10-21T05:58:30.868Z INFO  - 81114daeece3 Download complete
+2025-10-21T05:58:30.932Z INFO  - b5ee41dce4d1 Downloading 31MB / 67MB
+2025-10-21T05:58:31.008Z INFO  - 70b2d1c62102 Verifying Checksum
+2025-10-21T05:58:31.008Z INFO  - 70b2d1c62102 Download complete
+2025-10-21T05:58:31.028Z INFO  - b5ee41dce4d1 Downloading 51MB / 67MB
+2025-10-21T05:58:31.187Z INFO  - b5ee41dce4d1 Downloading 67MB / 67MB
+2025-10-21T05:58:31.187Z INFO  - b5ee41dce4d1 Verifying Checksum
+2025-10-21T05:58:31.187Z INFO  - b5ee41dce4d1 Download complete
+2025-10-21T05:58:32.771Z INFO  - c19952135643 Extracting 2MB / 46MB
+2025-10-21T05:58:32.875Z INFO  - c19952135643 Extracting 4MB / 46MB
+2025-10-21T05:58:33.115Z INFO  - c19952135643 Extracting 8MB / 46MB
+2025-10-21T05:58:33.383Z INFO  - c19952135643 Extracting 10MB / 46MB
+2025-10-21T05:58:33.498Z INFO  - c19952135643 Extracting 12MB / 46MB
+2025-10-21T05:58:33.603Z INFO  - c19952135643 Extracting 15MB / 46MB
+2025-10-21T05:58:33.976Z INFO  - c19952135643 Extracting 22MB / 46MB
+2025-10-21T05:58:34.370Z INFO  - c19952135643 Extracting 25MB / 46MB
+2025-10-21T05:58:34.579Z INFO  - c19952135643 Extracting 30MB / 46MB
+2025-10-21T05:58:34.691Z INFO  - c19952135643 Extracting 32MB / 46MB
+2025-10-21T05:58:34.926Z INFO  - c19952135643 Extracting 36MB / 46MB
+2025-10-21T05:58:35.050Z INFO  - c19952135643 Extracting 37MB / 46MB
+2025-10-21T05:58:35.170Z INFO  - c19952135643 Extracting 37MB / 46MB
+2025-10-21T05:58:35.479Z INFO  - c19952135643 Extracting 40MB / 46MB
+2025-10-21T05:58:37.167Z INFO  - c19952135643 Extracting 45MB / 46MB
+2025-10-21T05:58:37.168Z INFO  - c19952135643 Extracting 46MB / 46MB
+2025-10-21T05:58:37.235Z INFO  - c19952135643 Pull complete
+2025-10-21T05:58:37.566Z INFO  - b49b2c83cf45 Extracting 6MB / 35MB
+2025-10-21T05:58:37.762Z INFO  - b49b2c83cf45 Extracting 7MB / 35MB
+2025-10-21T05:58:37.871Z INFO  - b49b2c83cf45 Extracting 9MB / 35MB
+2025-10-21T05:58:37.972Z INFO  - b49b2c83cf45 Extracting 10MB / 35MB
+2025-10-21T05:58:38.187Z INFO  - b49b2c83cf45 Extracting 17MB / 35MB
+2025-10-21T05:58:38.435Z INFO  - b49b2c83cf45 Extracting 19MB / 35MB
+2025-10-21T05:58:38.542Z INFO  - b49b2c83cf45 Extracting 20MB / 35MB
+2025-10-21T05:58:38.642Z INFO  - b49b2c83cf45 Extracting 23MB / 35MB
+2025-10-21T05:58:38.986Z INFO  - b49b2c83cf45 Extracting 35MB / 35MB
+2025-10-21T05:58:39.078Z INFO  - b49b2c83cf45 Pull complete
+2025-10-21T05:58:39.239Z INFO  - a7350ec49683 Extracting 1MB / 3MB
+2025-10-21T05:58:39.616Z INFO  - a7350ec49683 Extracting 3MB / 3MB
+2025-10-21T05:58:39.675Z INFO  - a7350ec49683 Pull complete
+2025-10-21T05:58:39.706Z INFO  - ca64976d1f75 Extracting 387B / 387B
+2025-10-21T05:58:39.729Z INFO  - ca64976d1f75 Extracting 387B / 387B
+2025-10-21T05:58:39.794Z INFO  - ca64976d1f75 Pull complete
+2025-10-21T05:58:39.839Z INFO  - 9c231cb2d468 Extracting 32KB / 1MB
+2025-10-21T05:58:39.918Z INFO  - 9c231cb2d468 Extracting 1MB / 1MB
+2025-10-21T05:58:39.962Z INFO  - 9c231cb2d468 Pull complete
+2025-10-21T05:58:39.977Z INFO  - 6d5ed858bc79 Extracting 32KB / 39KB
+2025-10-21T05:58:40.030Z INFO  - 6d5ed858bc79 Extracting 39KB / 39KB
+2025-10-21T05:58:40.043Z INFO  - 6d5ed858bc79 Extracting 39KB / 39KB
+2025-10-21T05:58:40.079Z INFO  - 6d5ed858bc79 Pull complete
+2025-10-21T05:58:40.091Z INFO  - b147e1d819b6 Extracting 10KB / 10KB
+2025-10-21T05:58:40.135Z INFO  - b147e1d819b6 Extracting 10KB / 10KB
+2025-10-21T05:58:40.182Z INFO  - b147e1d819b6 Pull complete
+2025-10-21T05:58:40.231Z INFO  - bddeee446dea Extracting 14KB / 14KB
+2025-10-21T05:58:40.272Z INFO  - bddeee446dea Extracting 14KB / 14KB
+2025-10-21T05:58:40.320Z INFO  - bddeee446dea Pull complete
+2025-10-21T05:58:40.401Z INFO  - 3bba0ee51794 Extracting 281KB / 281KB
+2025-10-21T05:58:40.404Z INFO  - 3bba0ee51794 Extracting 281KB / 281KB
+2025-10-21T05:58:40.493Z INFO  - 3bba0ee51794 Pull complete
+2025-10-21T05:58:40.507Z INFO  - 5b5c68b4e022 Extracting 10KB / 10KB
+2025-10-21T05:58:40.534Z INFO  - 5b5c68b4e022 Extracting 10KB / 10KB
+2025-10-21T05:58:40.578Z INFO  - 5b5c68b4e022 Pull complete
+2025-10-21T05:58:40.611Z INFO  - 589fad460b75 Extracting 32KB / 1MB
+2025-10-21T05:58:40.647Z INFO  - 589fad460b75 Extracting 1MB / 1MB
+2025-10-21T05:58:40.681Z INFO  - 589fad460b75 Pull complete
+2025-10-21T05:58:40.732Z INFO  - a4ac82e1650a Extracting 32KB / 1MB
+2025-10-21T05:58:40.826Z INFO  - a4ac82e1650a Extracting 1MB / 1MB
+2025-10-21T05:58:40.873Z INFO  - a4ac82e1650a Pull complete
+2025-10-21T05:58:40.886Z INFO  - 6e652537f0de Extracting 3KB / 3KB
+2025-10-21T05:58:40.929Z INFO  - 6e652537f0de Extracting 3KB / 3KB
+2025-10-21T05:58:41.002Z INFO  - 6e652537f0de Pull complete
+2025-10-21T05:58:41.014Z INFO  - 4f4fb700ef54 Extracting 32B / 32B
+2025-10-21T05:58:41.070Z INFO  - 4f4fb700ef54 Extracting 32B / 32B
+2025-10-21T05:58:41.118Z INFO  - 4f4fb700ef54 Pull complete
+2025-10-21T05:58:41.465Z INFO  - 70b2d1c62102 Extracting 13MB / 45MB
+2025-10-21T05:58:41.565Z INFO  - 70b2d1c62102 Extracting 14MB / 45MB
+2025-10-21T05:58:41.818Z INFO  - 70b2d1c62102 Extracting 30MB / 45MB
+2025-10-21T05:58:41.947Z INFO  - 70b2d1c62102 Extracting 45MB / 45MB
+2025-10-21T05:58:42.067Z INFO  - 70b2d1c62102 Pull complete
+2025-10-21T05:58:42.369Z INFO  - 81114daeece3 Extracting 5MB / 46MB
+2025-10-21T05:58:42.732Z INFO  - 81114daeece3 Extracting 11MB / 46MB
+2025-10-21T05:58:43.175Z INFO  - 81114daeece3 Extracting 21MB / 46MB
+2025-10-21T05:58:43.649Z INFO  - 81114daeece3 Extracting 28MB / 46MB
+2025-10-21T05:58:43.981Z INFO  - 81114daeece3 Extracting 35MB / 46MB
+2025-10-21T05:58:44.140Z INFO  - 81114daeece3 Extracting 36MB / 46MB
+2025-10-21T05:58:44.313Z INFO  - 81114daeece3 Extracting 37MB / 46MB
+2025-10-21T05:58:44.681Z INFO  - 81114daeece3 Extracting 38MB / 46MB
+2025-10-21T05:58:44.856Z INFO  - 81114daeece3 Extracting 39MB / 46MB
+2025-10-21T05:58:45.013Z INFO  - 81114daeece3 Extracting 40MB / 46MB
+2025-10-21T05:58:45.552Z INFO  - 81114daeece3 Extracting 43MB / 46MB
+2025-10-21T05:58:45.884Z INFO  - 81114daeece3 Extracting 44MB / 46MB
+2025-10-21T05:58:46.306Z INFO  - 81114daeece3 Extracting 45MB / 46MB
+2025-10-21T05:58:46.560Z INFO  - 81114daeece3 Extracting 45MB / 46MB
+2025-10-21T05:58:46.815Z INFO  - 81114daeece3 Extracting 46MB / 46MB
+2025-10-21T05:58:46.976Z INFO  - 81114daeece3 Pull complete
+2025-10-21T05:58:47.555Z INFO  - 72560126db61 Extracting 2MB / 11MB
+2025-10-21T05:58:47.665Z INFO  - 72560126db61 Extracting 2MB / 11MB
+2025-10-21T05:58:47.914Z INFO  - 72560126db61 Extracting 4MB / 11MB
+2025-10-21T05:58:48.016Z INFO  - 72560126db61 Extracting 7MB / 11MB
+2025-10-21T05:58:48.365Z INFO  - 72560126db61 Extracting 9MB / 11MB
+2025-10-21T05:58:48.580Z INFO  - 72560126db61 Extracting 9MB / 11MB
+2025-10-21T05:58:49.119Z INFO  - 72560126db61 Extracting 10MB / 11MB
+2025-10-21T05:58:49.262Z INFO  - 72560126db61 Extracting 11MB / 11MB
+2025-10-21T05:58:49.424Z INFO  - 72560126db61 Pull complete
+2025-10-21T05:58:49.611Z INFO  - b4ee02498c51 Extracting 1MB / 16MB
+2025-10-21T05:58:50.790Z INFO  - b4ee02498c51 Extracting 9MB / 16MB
+2025-10-21T05:58:50.934Z INFO  - b4ee02498c51 Extracting 9MB / 16MB
+2025-10-21T05:58:51.238Z INFO  - b4ee02498c51 Extracting 10MB / 16MB
+2025-10-21T05:58:51.339Z INFO  - b4ee02498c51 Extracting 11MB / 16MB
+2025-10-21T05:58:51.599Z INFO  - b4ee02498c51 Extracting 11MB / 16MB
+2025-10-21T05:58:51.821Z INFO  - b4ee02498c51 Extracting 11MB / 16MB
+2025-10-21T05:58:52.045Z INFO  - b4ee02498c51 Extracting 12MB / 16MB
+2025-10-21T05:58:52.163Z INFO  - b4ee02498c51 Extracting 13MB / 16MB
+2025-10-21T05:58:52.649Z INFO  - b4ee02498c51 Extracting 14MB / 16MB
+2025-10-21T05:58:52.800Z INFO  - b4ee02498c51 Extracting 14MB / 16MB
+2025-10-21T05:58:53.353Z INFO  - b4ee02498c51 Extracting 15MB / 16MB
+2025-10-21T05:58:53.974Z INFO  - b4ee02498c51 Extracting 16MB / 16MB
+2025-10-21T05:58:54.243Z INFO  - b4ee02498c51 Pull complete
+2025-10-21T05:58:54.364Z INFO  - 9f7642f5d897 Extracting 126B / 126B
+2025-10-21T05:58:54.466Z INFO  - 9f7642f5d897 Extracting 126B / 126B
+2025-10-21T05:58:54.618Z INFO  - 9f7642f5d897 Pull complete
+2025-10-21T05:58:54.935Z INFO  - 064a93d404d8 Extracting 4MB / 5MB
+2025-10-21T05:58:54.953Z INFO  - 064a93d404d8 Extracting 5MB / 5MB
+2025-10-21T05:58:55.111Z INFO  - 064a93d404d8 Pull complete
+2025-10-21T05:58:55.136Z INFO  - 9078bcfaabdd Extracting 948B / 948B
+2025-10-21T05:58:55.186Z INFO  - 9078bcfaabdd Extracting 948B / 948B
+2025-10-21T05:58:55.236Z INFO  - 9078bcfaabdd Pull complete
+2025-10-21T05:58:55.266Z INFO  - 8367cb93fd79 Extracting 1KB / 1KB
+2025-10-21T05:58:55.286Z INFO  - 8367cb93fd79 Extracting 1KB / 1KB
+2025-10-21T05:58:55.364Z INFO  - 8367cb93fd79 Pull complete
+2025-10-21T05:58:55.379Z INFO  - 432802c32c40 Extracting 139B / 139B
+2025-10-21T05:58:55.424Z INFO  - 432802c32c40 Extracting 139B / 139B
+2025-10-21T05:58:55.489Z INFO  - 432802c32c40 Pull complete
+2025-10-21T05:58:55.642Z INFO  - b5ee41dce4d1 Extracting 544KB / 67MB
+2025-10-21T05:58:56.618Z INFO  - b5ee41dce4d1 Extracting 9MB / 67MB
+2025-10-21T05:58:57.687Z INFO  - b5ee41dce4d1 Extracting 12MB / 67MB
+2025-10-21T05:58:57.687Z INFO  - b5ee41dce4d1 Extracting 12MB / 67MB
+2025-10-21T05:58:57.688Z INFO  - b5ee41dce4d1 Extracting 13MB / 67MB
+2025-10-21T05:58:57.773Z INFO  - b5ee41dce4d1 Extracting 14MB / 67MB
+2025-10-21T05:58:57.979Z INFO  - b5ee41dce4d1 Extracting 15MB / 67MB
+2025-10-21T05:58:58.695Z INFO  - b5ee41dce4d1 Extracting 16MB / 67MB
+2025-10-21T05:58:59.162Z INFO  - b5ee41dce4d1 Extracting 21MB / 67MB
+2025-10-21T05:58:59.364Z INFO  - b5ee41dce4d1 Extracting 23MB / 67MB
+2025-10-21T05:58:59.572Z INFO  - b5ee41dce4d1 Extracting 28MB / 67MB
+2025-10-21T05:58:59.940Z INFO  - b5ee41dce4d1 Extracting 35MB / 67MB
+2025-10-21T05:59:00.074Z INFO  - b5ee41dce4d1 Extracting 36MB / 67MB
+2025-10-21T05:59:00.335Z INFO  - b5ee41dce4d1 Extracting 39MB / 67MB
+2025-10-21T05:59:00.521Z INFO  - b5ee41dce4d1 Extracting 40MB / 67MB
+2025-10-21T05:59:00.779Z INFO  - b5ee41dce4d1 Extracting 41MB / 67MB
+2025-10-21T05:59:00.908Z INFO  - b5ee41dce4d1 Extracting 43MB / 67MB
+2025-10-21T05:59:01.171Z INFO  - b5ee41dce4d1 Extracting 44MB / 67MB
+2025-10-21T05:59:01.316Z INFO  - b5ee41dce4d1 Extracting 45MB / 67MB
+2025-10-21T05:59:01.678Z INFO  - b5ee41dce4d1 Extracting 50MB / 67MB
+2025-10-21T05:59:01.931Z INFO  - b5ee41dce4d1 Extracting 51MB / 67MB
+2025-10-21T05:59:02.379Z INFO  - b5ee41dce4d1 Extracting 53MB / 67MB
+2025-10-21T05:59:02.597Z INFO  - b5ee41dce4d1 Extracting 61MB / 67MB
+2025-10-21T05:59:02.702Z INFO  - b5ee41dce4d1 Extracting 65MB / 67MB
+2025-10-21T05:59:02.886Z INFO  - b5ee41dce4d1 Extracting 67MB / 67MB
+2025-10-21T05:59:03.573Z INFO  - b5ee41dce4d1 Pull complete
+2025-10-21T05:59:03.595Z INFO  - 299358e274fc Extracting 1KB / 1KB
+2025-10-21T05:59:03.629Z INFO  - 299358e274fc Extracting 1KB / 1KB
+2025-10-21T05:59:03.679Z INFO  - 299358e274fc Pull complete
+2025-10-21T05:59:03.715Z INFO  - a0f687a8a43e Extracting 1KB / 1KB
+2025-10-21T05:59:03.741Z INFO  - a0f687a8a43e Extracting 1KB / 1KB
+2025-10-21T05:59:03.823Z INFO  - a0f687a8a43e Pull complete
+2025-10-21T05:59:03.840Z INFO  - f6668cf6fc4f Extracting 3KB / 3KB
+2025-10-21T05:59:03.881Z INFO  - f6668cf6fc4f Extracting 3KB / 3KB
+2025-10-21T05:59:03.925Z INFO  - f6668cf6fc4f Pull complete
+2025-10-21T05:59:03.939Z INFO  - cab9518eb753 Extracting 151B / 151B
+2025-10-21T05:59:03.993Z INFO  - cab9518eb753 Extracting 151B / 151B
+2025-10-21T05:59:04.036Z INFO  - cab9518eb753 Pull complete
+2025-10-21T05:59:04.064Z INFO  - f9717d513d08 Extracting 13KB / 13KB
+2025-10-21T05:59:04.108Z INFO  - f9717d513d08 Extracting 13KB / 13KB
+2025-10-21T05:59:04.179Z INFO  - f9717d513d08 Pull complete
+2025-10-21T05:59:04.193Z INFO  - 81d0cf6a6204 Extracting 1KB / 1KB
+2025-10-21T05:59:04.243Z INFO  - 81d0cf6a6204 Extracting 1KB / 1KB
+2025-10-21T05:59:04.315Z INFO  - 81d0cf6a6204 Pull complete
+2025-10-21T05:59:04.339Z INFO  - e705a3b12771 Extracting 269B / 269B
+2025-10-21T05:59:04.374Z INFO  - e705a3b12771 Extracting 269B / 269B
+2025-10-21T05:59:04.441Z INFO  - e705a3b12771 Pull complete
+2025-10-21T05:59:04.467Z INFO  - cdcdb6bbda74 Extracting 269B / 269B
+2025-10-21T05:59:04.493Z INFO  - cdcdb6bbda74 Extracting 269B / 269B
+2025-10-21T05:59:04.549Z INFO  - cdcdb6bbda74 Pull complete
+2025-10-21T05:59:04.677Z INFO  - 3c56665f14df Extracting 124B / 124B
+2025-10-21T05:59:04.741Z INFO  - 3c56665f14df Extracting 124B / 124B
+2025-10-21T05:59:04.791Z INFO  - 3c56665f14df Pull complete
+2025-10-21T05:59:04.827Z INFO  - 6076b5261919 Extracting 416B / 416B
+2025-10-21T05:59:04.859Z INFO  - 6076b5261919 Extracting 416B / 416B
+2025-10-21T05:59:04.920Z INFO  - 6076b5261919 Pull complete
+2025-10-21T05:59:04.937Z INFO  - cfb2442eec7a Extracting 1KB / 1KB
+2025-10-21T05:59:04.972Z INFO  - cfb2442eec7a Extracting 1KB / 1KB
+2025-10-21T05:59:05.025Z INFO  - cfb2442eec7a Pull complete
+2025-10-21T05:59:05.184Z INFO  - c7bf2b05e76c Extracting 96KB / 1MB
+2025-10-21T05:59:05.455Z INFO  - c7bf2b05e76c Extracting 320KB / 1MB
+2025-10-21T05:59:05.905Z INFO  - c7bf2b05e76c Extracting 992KB / 1MB
+2025-10-21T05:59:06.116Z INFO  - c7bf2b05e76c Extracting 1MB / 1MB
+2025-10-21T05:59:06.146Z INFO  - c7bf2b05e76c Extracting 1MB / 1MB
+2025-10-21T05:59:06.188Z INFO  - c7bf2b05e76c Extracting 1MB / 1MB
+2025-10-21T05:59:06.321Z INFO  - c7bf2b05e76c Pull complete
+2025-10-21T05:59:06.341Z INFO  - 9e40ee8f5c7c Extracting 133B / 133B
+2025-10-21T05:59:06.382Z INFO  - 9e40ee8f5c7c Extracting 133B / 133B
+2025-10-21T05:59:06.524Z INFO  - 9e40ee8f5c7c Pull complete
+2025-10-21T05:59:06.685Z INFO  -  Digest: sha256:090c03b4259823f8be151de295b9ef30aeea81cc540a9908f9a57cbe5e893095
+2025-10-21T05:59:06.705Z INFO  -  Status: Downloaded newer image for mcr.microsoft.com/appsvc/node:20-lts_20250724.2.tuxprod
+2025-10-21T05:59:06.717Z INFO  - Pull Image successful, Time taken: 38 Seconds
+2025-10-21T05:59:08.132Z INFO  - Starting container for site
+2025-10-21T05:59:08.132Z INFO  - docker run -d --expose=8080 --name ecommerce-backend-1761025938_0_138fb000 -e WEBSITE_USE_DIAGNOSTIC_SERVER=true -e WEBSITE_SITE_NAME=ecommerce-backend-1761025938 -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=ecommerce-backend-1761025938.azurewebsites.net -e WEBSITE_INSTANCE_ID=870d616759e74713524da24210e88870fbcc76bc99b00f44c089fc8ca08f9724 appsvc/node:20-lts_20250724.2.tuxprod 
+2025-10-21T05:59:08.132Z INFO  - Logging is not enabled for this container.
+Please use https://aka.ms/linux-diagnostics to enable logging to see container logs here.
+2025-10-21T05:59:10.500Z INFO  - Initiating warmup request to container ecommerce-backend-1761025938_0_138fb000 for site ecommerce-backend-1761025938
+2025-10-21T05:59:17.771Z ERROR - Container ecommerce-backend-1761025938_0_138fb000 for site ecommerce-backend-1761025938 has exited, failing site start
+2025-10-21T05:59:17.784Z ERROR - Container ecommerce-backend-1761025938_0_138fb000 didn't respond to HTTP pings on port: 8080. Failing site start. See container logs for debugging.
+2025-10-21T05:59:17.803Z INFO  - Stopping site ecommerce-backend-1761025938 because it failed during startup.
+2025-10-21T05:59:29.586Z INFO  - Starting container for site
+2025-10-21T05:59:29.587Z INFO  - docker run -d --expose=8080 --name ecommerce-backend-1761025938_0_f3fb5b2a -e WEBSITE_USE_DIAGNOSTIC_SERVER=true -e WEBSITE_SITE_NAME=ecommerce-backend-1761025938 -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=ecommerce-backend-1761025938.azurewebsites.net -e WEBSITE_INSTANCE_ID=870d616759e74713524da24210e88870fbcc76bc99b00f44c089fc8ca08f9724 appsvc/node:20-lts_20250724.2.tuxprod 
+2025-10-21T05:59:29.588Z INFO  - Logging is not enabled for this container.
+Please use https://aka.ms/linux-diagnostics to enable logging to see container logs here.
+2025-10-21T05:59:30.703Z INFO  - Initiating warmup request to container ecommerce-backend-1761025938_0_f3fb5b2a for site ecommerce-backend-1761025938
+2025-10-21T05:59:35.848Z ERROR - Container ecommerce-backend-1761025938_0_f3fb5b2a for site ecommerce-backend-1761025938 has exited, failing site start
+2025-10-21T05:59:35.859Z ERROR - Container ecommerce-backend-1761025938_0_f3fb5b2a didn't respond to HTTP pings on port: 8080. Failing site start. See container logs for debugging.
+2025-10-21T05:59:35.865Z INFO  - Stopping site ecommerce-backend-1761025938 because it failed during startup.
+2025-10-21T05:59:46.334Z INFO  - Starting container for site
+2025-10-21T05:59:46.336Z INFO  - docker run -d --expose=8080 --name ecommerce-backend-1761025938_0_12eb8e70 -e WEBSITE_USE_DIAGNOSTIC_SERVER=true -e WEBSITE_SITE_NAME=ecommerce-backend-1761025938 -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=ecommerce-backend-1761025938.azurewebsites.net -e WEBSITE_INSTANCE_ID=870d616759e74713524da24210e88870fbcc76bc99b00f44c089fc8ca08f9724 appsvc/node:20-lts_20250724.2.tuxprod 
+2025-10-21T05:59:46.337Z INFO  - Logging is not enabled for this container.
+Please use https://aka.ms/linux-diagnostics to enable logging to see container logs here.
+2025-10-21T05:59:47.384Z INFO  - Initiating warmup request to container ecommerce-backend-1761025938_0_12eb8e70 for site ecommerce-backend-1761025938
+2025-10-21T05:59:52.594Z ERROR - Container ecommerce-backend-1761025938_0_12eb8e70 for site ecommerce-backend-1761025938 has exited, failing site start
+2025-10-21T05:59:52.604Z ERROR - Container ecommerce-backend-1761025938_0_12eb8e70 didn't respond to HTTP pings on port: 8080. Failing site start. See container logs for debugging.
+2025-10-21T05:59:52.610Z INFO  - Stopping site ecommerce-backend-1761025938 because it failed during startup.
+2025-10-21T06:00:03.152Z ERROR - DockerApiException: Docker API responded with status code=NotFound, response={"message":"manifest for 10.1.0.6:13209/appsvc/node:20-lts_20250724.2.tuxprod not found: manifest unknown: manifest unknown"}
+
+2025-10-21T06:00:03.511Z ERROR - DockerApiException: Docker API responded with status code=NotFound, response={"message":"manifest for 10.1.0.5:13209/appsvc/node:20-lts_20250724.2.tuxprod not found: manifest unknown: manifest unknown"}
+
+2025-10-21T06:00:03.685Z INFO  - 20-lts_20250724.2.tuxprod Pulling from appsvc/node
+2025-10-21T06:00:03.689Z INFO  - c19952135643 Pulling fs layer
+2025-10-21T06:00:03.690Z INFO  - b49b2c83cf45 Pulling fs layer
+2025-10-21T06:00:03.690Z INFO  - a7350ec49683 Pulling fs layer
+2025-10-21T06:00:03.691Z INFO  - ca64976d1f75 Pulling fs layer
+2025-10-21T06:00:03.692Z INFO  - 9c231cb2d468 Pulling fs layer
+2025-10-21T06:00:03.693Z INFO  - 6d5ed858bc79 Pulling fs layer
+2025-10-21T06:00:03.696Z INFO  - b147e1d819b6 Pulling fs layer
+2025-10-21T06:00:03.697Z INFO  - bddeee446dea Pulling fs layer
+2025-10-21T06:00:03.697Z INFO  - 3bba0ee51794 Pulling fs layer
+2025-10-21T06:00:03.698Z INFO  - 5b5c68b4e022 Pulling fs layer
+2025-10-21T06:00:03.699Z INFO  - 589fad460b75 Pulling fs layer
+2025-10-21T06:00:03.700Z INFO  - a4ac82e1650a Pulling fs layer
+2025-10-21T06:00:03.701Z INFO  - 6e652537f0de Pulling fs layer
+2025-10-21T06:00:03.702Z INFO  - 4f4fb700ef54 Pulling fs layer
+2025-10-21T06:00:03.702Z INFO  - 70b2d1c62102 Pulling fs layer
+2025-10-21T06:00:03.703Z INFO  - 81114daeece3 Pulling fs layer
+2025-10-21T06:00:03.704Z INFO  - 72560126db61 Pulling fs layer
+2025-10-21T06:00:03.707Z INFO  - b4ee02498c51 Pulling fs layer
+2025-10-21T06:00:03.707Z INFO  - 9f7642f5d897 Pulling fs layer
+2025-10-21T06:00:03.708Z INFO  - 064a93d404d8 Pulling fs layer
+2025-10-21T06:00:03.709Z INFO  - 9078bcfaabdd Pulling fs layer
+2025-10-21T06:00:03.709Z INFO  - 8367cb93fd79 Pulling fs layer
+2025-10-21T06:00:03.710Z INFO  - 432802c32c40 Pulling fs layer
+2025-10-21T06:00:03.711Z INFO  - b5ee41dce4d1 Pulling fs layer
+2025-10-21T06:00:03.712Z INFO  - 299358e274fc Pulling fs layer
+2025-10-21T06:00:03.713Z INFO  - a0f687a8a43e Pulling fs layer
+2025-10-21T06:00:03.714Z INFO  - f6668cf6fc4f Pulling fs layer
+2025-10-21T06:00:03.715Z INFO  - cab9518eb753 Pulling fs layer
+2025-10-21T06:00:03.715Z INFO  - f9717d513d08 Pulling fs layer
+2025-10-21T06:00:03.719Z INFO  - 81d0cf6a6204 Pulling fs layer
+2025-10-21T06:00:03.719Z INFO  - e705a3b12771 Pulling fs layer
+2025-10-21T06:00:03.721Z INFO  - cdcdb6bbda74 Pulling fs layer
+2025-10-21T06:00:03.722Z INFO  - 3c56665f14df Pulling fs layer
+2025-10-21T06:00:03.723Z INFO  - 6076b5261919 Pulling fs layer
+2025-10-21T06:00:03.724Z INFO  - cfb2442eec7a Pulling fs layer
+2025-10-21T06:00:03.724Z INFO  - c7bf2b05e76c Pulling fs layer
+2025-10-21T06:00:03.724Z INFO  - 9e40ee8f5c7c Pulling fs layer
+2025-10-21T06:00:03.724Z INFO  - 9078bcfaabdd Waiting
+2025-10-21T06:00:03.724Z INFO  - 8367cb93fd79 Waiting
+2025-10-21T06:00:03.724Z INFO  - 432802c32c40 Waiting
+2025-10-21T06:00:03.724Z INFO  - b5ee41dce4d1 Waiting
+2025-10-21T06:00:03.724Z INFO  - 299358e274fc Waiting
+2025-10-21T06:00:03.724Z INFO  - a0f687a8a43e Waiting
+2025-10-21T06:00:03.724Z INFO  - f6668cf6fc4f Waiting
+2025-10-21T06:00:03.724Z INFO  - cab9518eb753 Waiting
+2025-10-21T06:00:03.724Z INFO  - f9717d513d08 Waiting
+2025-10-21T06:00:03.724Z INFO  - 81d0cf6a6204 Waiting
+2025-10-21T06:00:03.724Z INFO  - e705a3b12771 Waiting
+2025-10-21T06:00:03.724Z INFO  - cdcdb6bbda74 Waiting
+2025-10-21T06:00:03.724Z INFO  - 3c56665f14df Waiting
+2025-10-21T06:00:03.724Z INFO  - 6076b5261919 Waiting
+2025-10-21T06:00:03.724Z INFO  - cfb2442eec7a Waiting
+2025-10-21T06:00:03.724Z INFO  - c7bf2b05e76c Waiting
+2025-10-21T06:00:03.724Z INFO  - 9e40ee8f5c7c Waiting
+2025-10-21T06:00:03.865Z INFO  - 4f4fb700ef54 Downloading 32B / 32B
+2025-10-21T06:00:03.872Z INFO  - 4f4fb700ef54 Verifying Checksum
+2025-10-21T06:00:03.872Z INFO  - 4f4fb700ef54 Download complete
+2025-10-21T06:00:03.875Z INFO  - 6e652537f0de Verifying Checksum
+2025-10-21T06:00:03.875Z INFO  - 6e652537f0de Download complete
+2025-10-21T06:00:03.880Z INFO  - b147e1d819b6 Downloading 3KB / 10KB
+2025-10-21T06:00:03.881Z INFO  - b147e1d819b6 Downloading 10KB / 10KB
+2025-10-21T06:00:03.882Z INFO  - b147e1d819b6 Verifying Checksum
+2025-10-21T06:00:03.882Z INFO  - b147e1d819b6 Download complete
+2025-10-21T06:00:03.884Z INFO  - 589fad460b75 Verifying Checksum
+2025-10-21T06:00:03.884Z INFO  - 589fad460b75 Download complete
+2025-10-21T06:00:04.655Z INFO  - 9f7642f5d897 Downloading 126B / 126B
+2025-10-21T06:00:04.655Z INFO  - 9f7642f5d897 Verifying Checksum
+2025-10-21T06:00:04.655Z INFO  - 9f7642f5d897 Download complete
+2025-10-21T06:00:04.655Z INFO  - 5b5c68b4e022 Downloading 3KB / 10KB
+2025-10-21T06:00:04.655Z INFO  - 5b5c68b4e022 Downloading 10KB / 10KB
+2025-10-21T06:00:04.655Z INFO  - 5b5c68b4e022 Verifying Checksum
+2025-10-21T06:00:04.655Z INFO  - 5b5c68b4e022 Download complete
+2025-10-21T06:00:04.655Z INFO  - 3bba0ee51794 Downloading 281KB / 281KB
+2025-10-21T06:00:04.655Z INFO  - 3bba0ee51794 Verifying Checksum
+2025-10-21T06:00:04.655Z INFO  - 3bba0ee51794 Download complete
+2025-10-21T06:00:04.655Z INFO  - bddeee446dea Downloading 3KB / 14KB
+2025-10-21T06:00:04.655Z INFO  - bddeee446dea Downloading 14KB / 14KB
+2025-10-21T06:00:04.655Z INFO  - bddeee446dea Verifying Checksum
+2025-10-21T06:00:04.655Z INFO  - bddeee446dea Download complete
+2025-10-21T06:00:04.655Z INFO  - c19952135643 Downloading 11MB / 46MB
+2025-10-21T06:00:04.655Z INFO  - 70b2d1c62102 Downloading 8MB / 45MB
+2025-10-21T06:00:04.655Z INFO  - ca64976d1f75 Downloading 387B / 387B
+2025-10-21T06:00:04.656Z INFO  - ca64976d1f75 Verifying Checksum
+2025-10-21T06:00:04.656Z INFO  - ca64976d1f75 Download complete
+2025-10-21T06:00:04.656Z INFO  - 6d5ed858bc79 Downloading 3KB / 39KB
+2025-10-21T06:00:04.656Z INFO  - 6d5ed858bc79 Downloading 39KB / 39KB
+2025-10-21T06:00:04.656Z INFO  - a7350ec49683 Verifying Checksum
+2025-10-21T06:00:04.656Z INFO  - a7350ec49683 Download complete
+2025-10-21T06:00:04.656Z INFO  - 6d5ed858bc79 Verifying Checksum
+2025-10-21T06:00:04.656Z INFO  - 6d5ed858bc79 Download complete
+2025-10-21T06:00:04.656Z INFO  - c19952135643 Downloading 13MB / 46MB
+2025-10-21T06:00:04.656Z INFO  - b49b2c83cf45 Downloading 2MB / 35MB
+2025-10-21T06:00:04.656Z INFO  - a4ac82e1650a Verifying Checksum
+2025-10-21T06:00:04.656Z INFO  - a4ac82e1650a Download complete
+2025-10-21T06:00:04.656Z INFO  - b4ee02498c51 Downloading 4MB / 16MB
+2025-10-21T06:00:04.656Z INFO  - 064a93d404d8 Downloading 2MB / 5MB
+2025-10-21T06:00:04.656Z INFO  - c19952135643 Downloading 15MB / 46MB
+2025-10-21T06:00:04.656Z INFO  - b49b2c83cf45 Downloading 3MB / 35MB
+2025-10-21T06:00:04.656Z INFO  - 8367cb93fd79 Downloading 1KB / 1KB
+2025-10-21T06:00:04.656Z INFO  - 9c231cb2d468 Verifying Checksum
+2025-10-21T06:00:04.656Z INFO  - 9c231cb2d468 Download complete
+2025-10-21T06:00:04.656Z INFO  - 8367cb93fd79 Verifying Checksum
+2025-10-21T06:00:04.656Z INFO  - 8367cb93fd79 Download complete
+2025-10-21T06:00:04.656Z INFO  - 9078bcfaabdd Downloading 948B / 948B
+2025-10-21T06:00:04.656Z INFO  - 9078bcfaabdd Verifying Checksum
+2025-10-21T06:00:04.656Z INFO  - 9078bcfaabdd Download complete
+2025-10-21T06:00:04.656Z INFO  - 064a93d404d8 Verifying Checksum
+2025-10-21T06:00:04.656Z INFO  - 064a93d404d8 Download complete
+2025-10-21T06:00:04.656Z INFO  - 81114daeece3 Downloading 7MB / 46MB
+2025-10-21T06:00:04.656Z INFO  - b49b2c83cf45 Downloading 7MB / 35MB
+2025-10-21T06:00:04.656Z INFO  - 72560126db61 Downloading 9MB / 11MB
+2025-10-21T06:00:04.656Z INFO  - b5ee41dce4d1 Downloading 526KB / 67MB
+2025-10-21T06:00:04.657Z INFO  - 432802c32c40 Download complete
+2025-10-21T06:00:04.657Z INFO  - 299358e274fc Downloading 1KB / 1KB
+2025-10-21T06:00:04.657Z INFO  - f6668cf6fc4f Downloading 3KB / 3KB
+2025-10-21T06:00:04.657Z INFO  - 299358e274fc Verifying Checksum
+2025-10-21T06:00:04.657Z INFO  - 299358e274fc Download complete
+2025-10-21T06:00:04.657Z INFO  - f6668cf6fc4f Verifying Checksum
+2025-10-21T06:00:04.657Z INFO  - f6668cf6fc4f Download complete
+2025-10-21T06:00:04.657Z INFO  - 81114daeece3 Downloading 10MB / 46MB
+2025-10-21T06:00:04.657Z INFO  - 72560126db61 Verifying Checksum
+2025-10-21T06:00:04.657Z INFO  - 72560126db61 Download complete
+2025-10-21T06:00:04.657Z INFO  - b49b2c83cf45 Downloading 15MB / 35MB
+2025-10-21T06:00:04.657Z INFO  - cab9518eb753 Downloading 151B / 151B
+2025-10-21T06:00:04.657Z INFO  - cab9518eb753 Verifying Checksum
+2025-10-21T06:00:04.657Z INFO  - cab9518eb753 Download complete
+2025-10-21T06:00:04.657Z INFO  - a0f687a8a43e Downloading 1KB / 1KB
+2025-10-21T06:00:04.657Z INFO  - a0f687a8a43e Verifying Checksum
+2025-10-21T06:00:04.657Z INFO  - a0f687a8a43e Download complete
+2025-10-21T06:00:04.780Z INFO  - b4ee02498c51 Downloading 13MB / 16MB
+2025-10-21T06:00:04.784Z INFO  - 81d0cf6a6204 Downloading 1KB / 1KB
+2025-10-21T06:00:04.784Z INFO  - f9717d513d08 Downloading 13KB / 13KB
+2025-10-21T06:00:04.784Z INFO  - 81d0cf6a6204 Verifying Checksum
+2025-10-21T06:00:04.784Z INFO  - 81d0cf6a6204 Download complete
+2025-10-21T06:00:04.784Z INFO  - f9717d513d08 Verifying Checksum
+2025-10-21T06:00:04.784Z INFO  - f9717d513d08 Download complete
+2025-10-21T06:00:04.797Z INFO  - 70b2d1c62102 Downloading 26MB / 45MB
+2025-10-21T06:00:04.798Z INFO  - c19952135643 Downloading 24MB / 46MB
+2025-10-21T06:00:04.823Z INFO  - 81114daeece3 Downloading 14MB / 46MB
+2025-10-21T06:00:04.849Z INFO  - e705a3b12771 Downloading 269B / 269B
+2025-10-21T06:00:04.850Z INFO  - cdcdb6bbda74 Downloading 269B / 269B
+2025-10-21T06:00:04.850Z INFO  - e705a3b12771 Verifying Checksum
+2025-10-21T06:00:04.850Z INFO  - e705a3b12771 Download complete
+2025-10-21T06:00:04.850Z INFO  - cdcdb6bbda74 Verifying Checksum
+2025-10-21T06:00:04.850Z INFO  - cdcdb6bbda74 Download complete
+2025-10-21T06:00:04.868Z INFO  - b4ee02498c51 Verifying Checksum
+2025-10-21T06:00:04.868Z INFO  - b4ee02498c51 Download complete
+2025-10-21T06:00:04.903Z INFO  - b49b2c83cf45 Downloading 22MB / 35MB
+2025-10-21T06:00:04.921Z INFO  - 81114daeece3 Downloading 21MB / 46MB
+2025-10-21T06:00:04.921Z INFO  - c19952135643 Downloading 27MB / 46MB
+2025-10-21T06:00:04.922Z INFO  - 6076b5261919 Downloading 416B / 416B
+2025-10-21T06:00:04.923Z INFO  - 6076b5261919 Verifying Checksum
+2025-10-21T06:00:04.923Z INFO  - 6076b5261919 Download complete
+2025-10-21T06:00:04.964Z INFO  - 70b2d1c62102 Downloading 32MB / 45MB
+2025-10-21T06:00:04.966Z INFO  - 3c56665f14df Downloading 124B / 124B
+2025-10-21T06:00:04.968Z INFO  - cfb2442eec7a Downloading 1KB / 1KB
+2025-10-21T06:00:05.065Z INFO  - 9e40ee8f5c7c Downloading 133B / 133B
+2025-10-21T06:00:05.084Z INFO  - 81114daeece3 Downloading 24MB / 46MB
+2025-10-21T06:00:05.084Z INFO  - b5ee41dce4d1 Downloading 9MB / 67MB
+2025-10-21T06:00:05.084Z INFO  - 9e40ee8f5c7c Verifying Checksum
+2025-10-21T06:00:05.084Z INFO  - 9e40ee8f5c7c Download complete
+2025-10-21T06:00:05.105Z INFO  - 70b2d1c62102 Downloading 37MB / 45MB
+2025-10-21T06:00:05.116Z INFO  - cfb2442eec7a Verifying Checksum
+2025-10-21T06:00:05.116Z INFO  - cfb2442eec7a Download complete
+2025-10-21T06:00:05.116Z INFO  - 3c56665f14df Verifying Checksum
+2025-10-21T06:00:05.116Z INFO  - 3c56665f14df Download complete
+2025-10-21T06:00:05.128Z INFO  - c19952135643 Downloading 30MB / 46MB
+2025-10-21T06:00:05.153Z INFO  - c7bf2b05e76c Downloading 1MB / 1MB
+2025-10-21T06:00:05.153Z INFO  - c7bf2b05e76c Verifying Checksum
+2025-10-21T06:00:05.153Z INFO  - c7bf2b05e76c Download complete
+2025-10-21T06:00:05.185Z INFO  - 70b2d1c62102 Verifying Checksum
+2025-10-21T06:00:05.185Z INFO  - 70b2d1c62102 Download complete
+2025-10-21T06:00:05.198Z INFO  - b49b2c83cf45 Downloading 29MB / 35MB
+2025-10-21T06:00:05.225Z INFO  - b49b2c83cf45 Verifying Checksum
+2025-10-21T06:00:05.225Z INFO  - b49b2c83cf45 Download complete
+2025-10-21T06:00:05.286Z INFO  - 81114daeece3 Downloading 38MB / 46MB
+2025-10-21T06:00:05.309Z INFO  - b5ee41dce4d1 Downloading 24MB / 67MB
+2025-10-21T06:00:05.321Z INFO  - c19952135643 Verifying Checksum
+2025-10-21T06:00:05.324Z INFO  - c19952135643 Download complete
+2025-10-21T06:00:05.403Z INFO  - 81114daeece3 Downloading 45MB / 46MB
+2025-10-21T06:00:05.405Z INFO  - b5ee41dce4d1 Downloading 36MB / 67MB
+2025-10-21T06:00:05.426Z INFO  - 81114daeece3 Verifying Checksum
+2025-10-21T06:00:05.426Z INFO  - 81114daeece3 Download complete
+2025-10-21T06:00:05.973Z INFO  - c19952135643 Extracting 1MB / 46MB
+2025-10-21T06:00:06.369Z INFO  - b5ee41dce4d1 Downloading 60MB / 67MB
+2025-10-21T06:00:06.431Z INFO  - b5ee41dce4d1 Downloading 67MB / 67MB
+2025-10-21T06:00:06.431Z INFO  - b5ee41dce4d1 Verifying Checksum
+2025-10-21T06:00:06.431Z INFO  - b5ee41dce4d1 Download complete
+2025-10-21T06:00:06.463Z INFO  - c19952135643 Extracting 2MB / 46MB
+2025-10-21T06:00:07.310Z INFO  - c19952135643 Extracting 6MB / 46MB
+2025-10-21T06:00:07.416Z INFO  - c19952135643 Extracting 8MB / 46MB
+2025-10-21T06:00:07.540Z INFO  - c19952135643 Extracting 9MB / 46MB
+2025-10-21T06:00:07.956Z INFO  - c19952135643 Extracting 11MB / 46MB
+2025-10-21T06:00:08.304Z INFO  - c19952135643 Extracting 17MB / 46MB
+2025-10-21T06:00:08.519Z INFO  - c19952135643 Extracting 21MB / 46MB
+2025-10-21T06:00:08.638Z INFO  - c19952135643 Extracting 22MB / 46MB
+2025-10-21T06:00:09.016Z INFO  - c19952135643 Extracting 25MB / 46MB
+2025-10-21T06:00:09.126Z INFO  - c19952135643 Extracting 28MB / 46MB
+2025-10-21T06:00:09.349Z INFO  - c19952135643 Extracting 32MB / 46MB
+2025-10-21T06:00:09.717Z INFO  - c19952135643 Extracting 37MB / 46MB
+2025-10-21T06:00:09.982Z INFO  - c19952135643 Extracting 39MB / 46MB
+2025-10-21T06:00:10.113Z INFO  - c19952135643 Extracting 40MB / 46MB
+2025-10-21T06:00:10.215Z INFO  - c19952135643 Extracting 41MB / 46MB
+2025-10-21T06:00:10.326Z INFO  - c19952135643 Extracting 42MB / 46MB
+2025-10-21T06:00:10.474Z INFO  - c19952135643 Extracting 43MB / 46MB
+2025-10-21T06:00:11.448Z INFO  - c19952135643 Extracting 45MB / 46MB
+2025-10-21T06:00:11.671Z INFO  - c19952135643 Extracting 46MB / 46MB
+2025-10-21T06:00:11.787Z INFO  - c19952135643 Pull complete
+2025-10-21T06:00:12.122Z INFO  - b49b2c83cf45 Extracting 3MB / 35MB
+2025-10-21T06:00:12.223Z INFO  - b49b2c83cf45 Extracting 6MB / 35MB
+2025-10-21T06:00:12.326Z INFO  - b49b2c83cf45 Extracting 9MB / 35MB
+2025-10-21T06:00:12.430Z INFO  - b49b2c83cf45 Extracting 10MB / 35MB
+2025-10-21T06:00:14.161Z INFO  - b49b2c83cf45 Extracting 20MB / 35MB
+2025-10-21T06:00:14.161Z INFO  - b49b2c83cf45 Extracting 29MB / 35MB
+2025-10-21T06:00:14.161Z INFO  - b49b2c83cf45 Extracting 33MB / 35MB
+2025-10-21T06:00:14.161Z INFO  - b49b2c83cf45 Extracting 35MB / 35MB
+2025-10-21T06:00:15.161Z INFO  - b49b2c83cf45 Pull complete
+2025-10-21T06:00:15.161Z INFO  - a7350ec49683 Extracting 3MB / 3MB
+2025-10-21T06:00:15.161Z INFO  - a7350ec49683 Pull complete
+2025-10-21T06:00:15.161Z INFO  - ca64976d1f75 Extracting 387B / 387B
+2025-10-21T06:00:15.161Z INFO  - ca64976d1f75 Extracting 387B / 387B
+2025-10-21T06:00:15.161Z INFO  - ca64976d1f75 Pull complete
+2025-10-21T06:00:15.161Z INFO  - 9c231cb2d468 Extracting 32KB / 1MB
+2025-10-21T06:00:15.161Z INFO  - 9c231cb2d468 Extracting 864KB / 1MB
+2025-10-21T06:00:15.162Z INFO  - 9c231cb2d468 Extracting 1MB / 1MB
+2025-10-21T06:00:15.162Z INFO  - 9c231cb2d468 Pull complete
+2025-10-21T06:00:15.162Z INFO  - 6d5ed858bc79 Extracting 32KB / 39KB
+2025-10-21T06:00:15.162Z INFO  - 6d5ed858bc79 Extracting 39KB / 39KB
+2025-10-21T06:00:15.162Z INFO  - 6d5ed858bc79 Extracting 39KB / 39KB
+2025-10-21T06:00:15.162Z INFO  - 6d5ed858bc79 Pull complete
+2025-10-21T06:00:15.162Z INFO  - b147e1d819b6 Extracting 10KB / 10KB
+2025-10-21T06:00:15.185Z INFO  - b147e1d819b6 Extracting 10KB / 10KB
+2025-10-21T06:00:15.229Z INFO  - b147e1d819b6 Pull complete
+2025-10-21T06:00:15.245Z INFO  - bddeee446dea Extracting 14KB / 14KB
+2025-10-21T06:00:15.298Z INFO  - bddeee446dea Extracting 14KB / 14KB
+2025-10-21T06:00:15.339Z INFO  - bddeee446dea Pull complete
+2025-10-21T06:00:15.430Z INFO  - 3bba0ee51794 Extracting 281KB / 281KB
+2025-10-21T06:00:15.433Z INFO  - 3bba0ee51794 Extracting 281KB / 281KB
+2025-10-21T06:00:15.494Z INFO  - 3bba0ee51794 Pull complete
+2025-10-21T06:00:15.537Z INFO  - 5b5c68b4e022 Extracting 10KB / 10KB
+2025-10-21T06:00:15.574Z INFO  - 5b5c68b4e022 Extracting 10KB / 10KB
+2025-10-21T06:00:15.622Z INFO  - 5b5c68b4e022 Pull complete
+2025-10-21T06:00:15.638Z INFO  - 589fad460b75 Extracting 32KB / 1MB
+2025-10-21T06:00:15.697Z INFO  - 589fad460b75 Extracting 1MB / 1MB
+2025-10-21T06:00:15.769Z INFO  - 589fad460b75 Pull complete
+2025-10-21T06:00:15.787Z INFO  - a4ac82e1650a Extracting 32KB / 1MB
+2025-10-21T06:00:15.875Z INFO  - a4ac82e1650a Extracting 1MB / 1MB
+2025-10-21T06:00:15.919Z INFO  - a4ac82e1650a Pull complete
+2025-10-21T06:00:15.939Z INFO  - 6e652537f0de Extracting 3KB / 3KB
+2025-10-21T06:00:15.990Z INFO  - 6e652537f0de Extracting 3KB / 3KB
+2025-10-21T06:00:16.061Z INFO  - 6e652537f0de Pull complete
+2025-10-21T06:00:16.121Z INFO  - 4f4fb700ef54 Extracting 32B / 32B
+2025-10-21T06:00:16.146Z INFO  - 4f4fb700ef54 Extracting 32B / 32B
+2025-10-21T06:00:16.214Z INFO  - 4f4fb700ef54 Pull complete
+2025-10-21T06:00:16.409Z INFO  - 70b2d1c62102 Extracting 11MB / 45MB
+2025-10-21T06:00:16.813Z INFO  - 70b2d1c62102 Extracting 45MB / 45MB
+2025-10-21T06:00:17.038Z INFO  - 70b2d1c62102 Pull complete
+2025-10-21T06:00:17.822Z INFO  - 81114daeece3 Extracting 15MB / 46MB
+2025-10-21T06:00:17.939Z INFO  - 81114daeece3 Extracting 16MB / 46MB
+2025-10-21T06:00:18.117Z INFO  - 81114daeece3 Extracting 17MB / 46MB
+2025-10-21T06:00:18.224Z INFO  - 81114daeece3 Extracting 21MB / 46MB
+2025-10-21T06:00:18.427Z INFO  - 81114daeece3 Extracting 23MB / 46MB
+2025-10-21T06:00:18.536Z INFO  - 81114daeece3 Extracting 27MB / 46MB
+2025-10-21T06:00:19.324Z INFO  - 81114daeece3 Extracting 35MB / 46MB
+2025-10-21T06:00:19.714Z INFO  - 81114daeece3 Extracting 36MB / 46MB
+2025-10-21T06:00:19.880Z INFO  - 81114daeece3 Extracting 37MB / 46MB
+2025-10-21T06:00:20.142Z INFO  - 81114daeece3 Extracting 38MB / 46MB
+2025-10-21T06:00:21.201Z INFO  - 81114daeece3 Extracting 39MB / 46MB
+2025-10-21T06:00:21.474Z INFO  - 81114daeece3 Extracting 40MB / 46MB
+2025-10-21T06:00:21.913Z INFO  - 81114daeece3 Extracting 42MB / 46MB
+2025-10-21T06:00:22.334Z INFO  - 81114daeece3 Extracting 43MB / 46MB
+2025-10-21T06:00:22.798Z INFO  - 81114daeece3 Extracting 44MB / 46MB
+2025-10-21T06:00:23.654Z INFO  - 81114daeece3 Extracting 45MB / 46MB
+2025-10-21T06:00:24.666Z INFO  - 81114daeece3 Extracting 45MB / 46MB
+2025-10-21T06:00:24.666Z INFO  - 81114daeece3 Extracting 46MB / 46MB
+2025-10-21T06:00:24.721Z INFO  - 81114daeece3 Pull complete
+2025-10-21T06:00:25.214Z INFO  - 72560126db61 Extracting 8MB / 11MB
+2025-10-21T06:00:25.322Z INFO  - 72560126db61 Extracting 8MB / 11MB
+2025-10-21T06:00:25.446Z INFO  - 72560126db61 Extracting 9MB / 11MB
+2025-10-21T06:00:25.999Z INFO  - 72560126db61 Extracting 10MB / 11MB
+2025-10-21T06:00:26.222Z INFO  - 72560126db61 Extracting 10MB / 11MB
+2025-10-21T06:00:26.430Z INFO  - 72560126db61 Extracting 10MB / 11MB
+2025-10-21T06:00:26.686Z INFO  - 72560126db61 Extracting 10MB / 11MB
+2025-10-21T06:00:26.905Z INFO  - 72560126db61 Extracting 11MB / 11MB
+2025-10-21T06:00:27.036Z INFO  - 72560126db61 Pull complete
+2025-10-21T06:00:27.238Z INFO  - b4ee02498c51 Extracting 1MB / 16MB
+2025-10-21T06:00:27.340Z INFO  - b4ee02498c51 Extracting 3MB / 16MB
+2025-10-21T06:00:27.450Z INFO  - b4ee02498c51 Extracting 4MB / 16MB
+2025-10-21T06:00:27.688Z INFO  - b4ee02498c51 Extracting 7MB / 16MB
+2025-10-21T06:00:28.566Z INFO  - b4ee02498c51 Extracting 9MB / 16MB
+2025-10-21T06:00:28.871Z INFO  - b4ee02498c51 Extracting 9MB / 16MB
+2025-10-21T06:00:29.181Z INFO  - b4ee02498c51 Extracting 9MB / 16MB
+2025-10-21T06:00:29.691Z INFO  - b4ee02498c51 Extracting 10MB / 16MB
+2025-10-21T06:00:29.864Z INFO  - b4ee02498c51 Extracting 10MB / 16MB
+2025-10-21T06:00:30.010Z INFO  - b4ee02498c51 Extracting 11MB / 16MB
+2025-10-21T06:00:30.742Z INFO  - b4ee02498c51 Extracting 11MB / 16MB
+2025-10-21T06:00:31.319Z INFO  - b4ee02498c51 Extracting 11MB / 16MB
+2025-10-21T06:00:32.381Z INFO  - b4ee02498c51 Extracting 13MB / 16MB
+2025-10-21T06:00:32.886Z INFO  - b4ee02498c51 Extracting 14MB / 16MB
+2025-10-21T06:00:33.035Z INFO  - b4ee02498c51 Extracting 14MB / 16MB
+2025-10-21T06:00:33.628Z INFO  - b4ee02498c51 Extracting 15MB / 16MB
+2025-10-21T06:00:34.137Z INFO  - b4ee02498c51 Extracting 15MB / 16MB
+2025-10-21T06:00:34.315Z INFO  - b4ee02498c51 Extracting 16MB / 16MB
+2025-10-21T06:00:34.629Z INFO  - b4ee02498c51 Pull complete
+2025-10-21T06:00:34.645Z INFO  - 9f7642f5d897 Extracting 126B / 126B
+2025-10-21T06:00:34.686Z INFO  - 9f7642f5d897 Extracting 126B / 126B
+2025-10-21T06:00:34.743Z INFO  - 9f7642f5d897 Pull complete
+2025-10-21T06:00:35.159Z INFO  - 064a93d404d8 Extracting 4MB / 5MB
+2025-10-21T06:00:35.182Z INFO  - 064a93d404d8 Extracting 5MB / 5MB
+2025-10-21T06:00:35.297Z INFO  - 064a93d404d8 Pull complete
+2025-10-21T06:00:35.327Z INFO  - 9078bcfaabdd Extracting 948B / 948B
+2025-10-21T06:00:35.377Z INFO  - 9078bcfaabdd Extracting 948B / 948B
+2025-10-21T06:00:35.436Z INFO  - 9078bcfaabdd Pull complete
+2025-10-21T06:00:35.459Z INFO  - 8367cb93fd79 Extracting 1KB / 1KB
+2025-10-21T06:00:35.502Z INFO  - 8367cb93fd79 Extracting 1KB / 1KB
+2025-10-21T06:00:35.547Z INFO  - 8367cb93fd79 Pull complete
+2025-10-21T06:00:35.570Z INFO  - 432802c32c40 Extracting 139B / 139B
+2025-10-21T06:00:35.600Z INFO  - 432802c32c40 Extracting 139B / 139B
+2025-10-21T06:00:35.645Z INFO  - 432802c32c40 Pull complete
+2025-10-21T06:00:35.779Z INFO  - b5ee41dce4d1 Extracting 544KB / 67MB
+2025-10-21T06:00:35.894Z INFO  - b5ee41dce4d1 Extracting 3MB / 67MB
+2025-10-21T06:00:36.116Z INFO  - b5ee41dce4d1 Extracting 5MB / 67MB
+2025-10-21T06:00:36.876Z INFO  - b5ee41dce4d1 Extracting 12MB / 67MB
+2025-10-21T06:00:37.233Z INFO  - b5ee41dce4d1 Extracting 12MB / 67MB
+2025-10-21T06:00:37.720Z INFO  - b5ee41dce4d1 Extracting 14MB / 67MB
+2025-10-21T06:00:38.689Z INFO  - b5ee41dce4d1 Extracting 15MB / 67MB
+2025-10-21T06:00:38.689Z INFO  - b5ee41dce4d1 Extracting 16MB / 67MB
+2025-10-21T06:00:38.690Z INFO  - b5ee41dce4d1 Extracting 18MB / 67MB
+2025-10-21T06:00:38.953Z INFO  - b5ee41dce4d1 Extracting 21MB / 67MB
+2025-10-21T06:00:39.191Z INFO  - b5ee41dce4d1 Extracting 27MB / 67MB
+2025-10-21T06:00:39.300Z INFO  - b5ee41dce4d1 Extracting 28MB / 67MB
+2025-10-21T06:00:40.144Z INFO  - b5ee41dce4d1 Extracting 38MB / 67MB
+2025-10-21T06:00:40.309Z INFO  - b5ee41dce4d1 Extracting 39MB / 67MB
+2025-10-21T06:00:40.673Z INFO  - b5ee41dce4d1 Extracting 40MB / 67MB
+2025-10-21T06:00:41.010Z INFO  - b5ee41dce4d1 Extracting 41MB / 67MB
+2025-10-21T06:00:41.265Z INFO  - b5ee41dce4d1 Extracting 43MB / 67MB
+2025-10-21T06:00:41.489Z INFO  - b5ee41dce4d1 Extracting 44MB / 67MB
+2025-10-21T06:00:41.942Z INFO  - b5ee41dce4d1 Extracting 45MB / 67MB
+2025-10-21T06:00:42.310Z INFO  - b5ee41dce4d1 Extracting 50MB / 67MB
+2025-10-21T06:00:42.606Z INFO  - b5ee41dce4d1 Extracting 51MB / 67MB
+2025-10-21T06:00:42.709Z INFO  - b5ee41dce4d1 Extracting 53MB / 67MB
+2025-10-21T06:00:42.813Z INFO  - b5ee41dce4d1 Extracting 57MB / 67MB
+2025-10-21T06:00:42.917Z INFO  - b5ee41dce4d1 Extracting 62MB / 67MB
+2025-10-21T06:00:43.196Z INFO  - b5ee41dce4d1 Extracting 67MB / 67MB
+2025-10-21T06:00:43.531Z INFO  - b5ee41dce4d1 Pull complete
+2025-10-21T06:00:43.560Z INFO  - 299358e274fc Extracting 1KB / 1KB
+2025-10-21T06:00:43.598Z INFO  - 299358e274fc Extracting 1KB / 1KB
+2025-10-21T06:00:43.640Z INFO  - 299358e274fc Pull complete
+2025-10-21T06:00:43.655Z INFO  - a0f687a8a43e Extracting 1KB / 1KB
+2025-10-21T06:00:43.691Z INFO  - a0f687a8a43e Extracting 1KB / 1KB
+2025-10-21T06:00:43.751Z INFO  - a0f687a8a43e Pull complete
+2025-10-21T06:00:43.769Z INFO  - f6668cf6fc4f Extracting 3KB / 3KB
+2025-10-21T06:00:43.799Z INFO  - f6668cf6fc4f Extracting 3KB / 3KB
+2025-10-21T06:00:43.836Z INFO  - f6668cf6fc4f Pull complete
+2025-10-21T06:00:43.857Z INFO  - cab9518eb753 Extracting 151B / 151B
+2025-10-21T06:00:43.913Z INFO  - cab9518eb753 Extracting 151B / 151B
+2025-10-21T06:00:43.955Z INFO  - cab9518eb753 Pull complete
+2025-10-21T06:00:43.976Z INFO  - f9717d513d08 Extracting 13KB / 13KB
+2025-10-21T06:00:44.002Z INFO  - f9717d513d08 Extracting 13KB / 13KB
+2025-10-21T06:00:44.061Z INFO  - f9717d513d08 Pull complete
+2025-10-21T06:00:44.084Z INFO  - 81d0cf6a6204 Extracting 1KB / 1KB
+2025-10-21T06:00:44.140Z INFO  - 81d0cf6a6204 Extracting 1KB / 1KB
+2025-10-21T06:00:44.190Z INFO  - 81d0cf6a6204 Pull complete
+2025-10-21T06:00:44.226Z INFO  - e705a3b12771 Extracting 269B / 269B
+2025-10-21T06:00:44.245Z INFO  - e705a3b12771 Extracting 269B / 269B
+2025-10-21T06:00:44.303Z INFO  - e705a3b12771 Pull complete
+2025-10-21T06:00:44.319Z INFO  - cdcdb6bbda74 Extracting 269B / 269B
+2025-10-21T06:00:44.345Z INFO  - cdcdb6bbda74 Extracting 269B / 269B
+2025-10-21T06:00:44.408Z INFO  - cdcdb6bbda74 Pull complete
+2025-10-21T06:00:44.490Z INFO  - 3c56665f14df Extracting 124B / 124B
+2025-10-21T06:00:44.524Z INFO  - 3c56665f14df Extracting 124B / 124B
+2025-10-21T06:00:44.573Z INFO  - 3c56665f14df Pull complete
+2025-10-21T06:00:44.585Z INFO  - 6076b5261919 Extracting 416B / 416B
+2025-10-21T06:00:44.625Z INFO  - 6076b5261919 Extracting 416B / 416B
+2025-10-21T06:00:44.657Z INFO  - 6076b5261919 Pull complete
+2025-10-21T06:00:44.720Z INFO  - cfb2442eec7a Extracting 1KB / 1KB
+2025-10-21T06:00:44.739Z INFO  - cfb2442eec7a Extracting 1KB / 1KB
+2025-10-21T06:00:44.781Z INFO  - cfb2442eec7a Pull complete
+2025-10-21T06:00:45.609Z INFO  - c7bf2b05e76c Extracting 1MB / 1MB
+2025-10-21T06:00:45.691Z INFO  - c7bf2b05e76c Extracting 1MB / 1MB
+2025-10-21T06:00:45.734Z INFO  - c7bf2b05e76c Extracting 1MB / 1MB
+2025-10-21T06:00:45.798Z INFO  - c7bf2b05e76c Pull complete
+2025-10-21T06:00:45.810Z INFO  - 9e40ee8f5c7c Extracting 133B / 133B
+2025-10-21T06:00:45.847Z INFO  - 9e40ee8f5c7c Extracting 133B / 133B
+2025-10-21T06:00:46.698Z INFO  - 9e40ee8f5c7c Pull complete
+2025-10-21T06:00:46.698Z INFO  -  Digest: sha256:090c03b4259823f8be151de295b9ef30aeea81cc540a9908f9a57cbe5e893095
+2025-10-21T06:00:46.698Z INFO  -  Status: Downloaded newer image for mcr.microsoft.com/appsvc/node:20-lts_20250724.2.tuxprod
+2025-10-21T06:00:46.703Z INFO  - Pull Image successful, Time taken: 43 Seconds
+2025-10-21T06:00:47.764Z INFO  - Starting container for site
+2025-10-21T06:00:47.764Z INFO  - docker run -d --expose=8080 --name ecommerce-backend-1761025938_0_22fdac48 -e WEBSITE_USE_DIAGNOSTIC_SERVER=true -e WEBSITE_SITE_NAME=ecommerce-backend-1761025938 -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=ecommerce-backend-1761025938.azurewebsites.net -e WEBSITE_INSTANCE_ID=870d616759e74713524da24210e88870fbcc76bc99b00f44c089fc8ca08f9724 appsvc/node:20-lts_20250724.2.tuxprod 
+2025-10-21T06:00:47.764Z INFO  - Logging is not enabled for this container.
+Please use https://aka.ms/linux-diagnostics to enable logging to see container logs here.
+2025-10-21T06:00:49.848Z INFO  - Initiating warmup request to container ecommerce-backend-1761025938_0_22fdac48 for site ecommerce-backend-1761025938
+2025-10-21T06:00:56.355Z ERROR - Container ecommerce-backend-1761025938_0_22fdac48 for site ecommerce-backend-1761025938 has exited, failing site start
+2025-10-21T06:00:56.363Z ERROR - Container ecommerce-backend-1761025938_0_22fdac48 didn't respond to HTTP pings on port: 8080. Failing site start. See container logs for debugging.
+2025-10-21T06:00:56.372Z INFO  - Stopping site ecommerce-backend-1761025938 because it failed during startup.
+2025-10-21T06:03:14.916Z INFO  - Starting container for site
+2025-10-21T06:03:14.917Z INFO  - docker run -d --expose=8080 --name ecommerce-backend-1761025938_0_ce15eb85 -e WEBSITE_USE_DIAGNOSTIC_SERVER=true -e WEBSITE_SITE_NAME=ecommerce-backend-1761025938 -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=ecommerce-backend-1761025938.azurewebsites.net -e WEBSITE_INSTANCE_ID=870d616759e74713524da24210e88870fbcc76bc99b00f44c089fc8ca08f9724 appsvc/node:20-lts_20250724.2.tuxprod 
+2025-10-21T06:03:14.919Z INFO  - Logging is not enabled for this container.
+Please use https://aka.ms/linux-diagnostics to enable logging to see container logs here.
+2025-10-21T06:03:16.277Z INFO  - Initiating warmup request to container ecommerce-backend-1761025938_0_ce15eb85 for site ecommerce-backend-1761025938
+2025-10-21T06:03:22.196Z ERROR - Container ecommerce-backend-1761025938_0_ce15eb85 for site ecommerce-backend-1761025938 has exited, failing site start
+2025-10-21T06:03:22.205Z ERROR - Container ecommerce-backend-1761025938_0_ce15eb85 didn't respond to HTTP pings on port: 8080. Failing site start. See container logs for debugging.
+2025-10-21T06:03:22.211Z INFO  - Stopping site ecommerce-backend-1761025938 because it failed during startup.
+2025-10-21T06:05:45.8049982Z Container start method called.
+2025-10-21T06:05:45.8061339Z Establishing network.
+2025-10-21T06:05:45.8063016Z Pulling image: appsvc/node:20-lts_20250724.2.tuxprod.
+2025-10-21T06:05:48.3274391Z Container is starting.
+2025-10-21T06:05:48.3279363Z Establishing user namespace if not established already.
+2025-10-21T06:05:48.3283207Z Establishing network if not established already.
+2025-10-21T06:05:48.3286429Z Mounting volumes.
+2025-10-21T06:05:48.3321055Z Nested mountpoint data
+2025-10-21T06:05:48.3493173Z Nested mountpoint volatile/logs
+2025-10-21T06:05:48.3647619Z Nested mountpoint 
+2025-10-21T06:05:48.3689182Z Nested mountpoint 
+2025-10-21T06:05:48.3814664Z Nested mountpoint 
+2025-10-21T06:05:48.4031725Z Nested mountpoint 
+2025-10-21T06:05:49.1438914Z Creating container.
+2025-10-21T06:05:49.1440257Z Creating pipes for streaming container io.
+2025-10-21T06:05:49.1441536Z Creating stdout named pipe at /podr/container/pipe/8e89ad6df3ec_ecommerce-backend-1761025938/stdout_8f61788c0ed241b4aaecb2ffca526267.
+2025-10-21T06:05:49.1452735Z Successfully created stdout named pipe at: /podr/container/pipe/8e89ad6df3ec_ecommerce-backend-1761025938/stdout_8f61788c0ed241b4aaecb2ffca526267.
+2025-10-21T06:05:49.1454597Z Opening named pipe /podr/container/pipe/8e89ad6df3ec_ecommerce-backend-1761025938/stdout_8f61788c0ed241b4aaecb2ffca526267 for reading in non-blocking mode.
+2025-10-21T06:05:49.1456534Z Successfully opened named pipe: /podr/container/pipe/8e89ad6df3ec_ecommerce-backend-1761025938/stdout_8f61788c0ed241b4aaecb2ffca526267.
+2025-10-21T06:05:49.1457718Z Successfully removed non-blocking flag from /podr/container/pipe/8e89ad6df3ec_ecommerce-backend-1761025938/stdout_8f61788c0ed241b4aaecb2ffca526267.
+2025-10-21T06:05:49.1461697Z Creating stderr named pipe at /podr/container/pipe/8e89ad6df3ec_ecommerce-backend-1761025938/stderr_d1b0228576944c979b979b2c5afe7a46.
+2025-10-21T06:05:49.1464064Z Successfully created stderr named pipe at: /podr/container/pipe/8e89ad6df3ec_ecommerce-backend-1761025938/stderr_d1b0228576944c979b979b2c5afe7a46.
+2025-10-21T06:05:49.1465683Z Opening named pipe /podr/container/pipe/8e89ad6df3ec_ecommerce-backend-1761025938/stderr_d1b0228576944c979b979b2c5afe7a46 for reading in non-blocking mode.
+2025-10-21T06:05:49.1468104Z Successfully opened named pipe: /podr/container/pipe/8e89ad6df3ec_ecommerce-backend-1761025938/stderr_d1b0228576944c979b979b2c5afe7a46.
+2025-10-21T06:05:49.1480374Z Successfully removed non-blocking flag from /podr/container/pipe/8e89ad6df3ec_ecommerce-backend-1761025938/stderr_d1b0228576944c979b979b2c5afe7a46.
+2025-10-21T06:05:49.1483895Z Creating container with image: appsvc/node:20-lts_20250724.2.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20250724.2.tuxprod
+2025-10-21T06:05:49.5690261Z Starting container: 8e89ad6df3ec_ecommerce-backend-1761025938.
+2025-10-21T06:05:49.5995484Z Starting watchers and probes.
+2025-10-21T06:05:49.6025389Z Starting metrics collection.
+2025-10-21T06:05:49.6034498Z Container is running.
+2025-10-21T06:05:49.6465286Z Container start method finished after 3837 ms.
+2025-10-21T06:05:58.4562415Z Container has finished running with exit code: 1.
+2025-10-21T06:05:58.4564581Z Container is terminating. Grace period: 5 seconds.
+2025-10-21T06:05:58.4604359Z Stop and delete container. Retry count = 0
+2025-10-21T06:05:58.4606558Z Stopping container: 8e89ad6df3ec_ecommerce-backend-1761025938.
+2025-10-21T06:05:58.5032958Z Deleting container: 8e89ad6df3ec_ecommerce-backend-1761025938. Retry count = 0
+2025-10-21T06:05:58.5892116Z Container spec TerminationMessagePolicy  path 
+2025-10-21T06:05:58.5893799Z Container is terminated. Total time elapsed: 132 ms.
+2025-10-21T06:05:58.5896195Z Site container: ecommerce-backend-1761025938 terminated during site startup.
+2025-10-21T06:05:58.5910630Z Site startup probe failed after 8.9384896 seconds.
+2025-10-21T06:05:58.5956346Z Failed to start site. Revert by stopping site.
+2025-10-21T06:05:58.5960585Z Site: ecommerce-backend-1761025938 stopped.
+2025-10-21T06:06:05.7578215Z Container start method called.
+2025-10-21T06:06:05.7582705Z Establishing network.
+2025-10-21T06:06:05.7584053Z Pulling image: appsvc/node:20-lts_20250724.2.tuxprod.
+2025-10-21T06:06:07.1316212Z Container is starting.
+2025-10-21T06:06:07.1322056Z Establishing user namespace if not established already.
+2025-10-21T06:06:07.1327395Z Establishing network if not established already.
+2025-10-21T06:06:07.1332957Z Mounting volumes.
+2025-10-21T06:06:07.1348026Z Nested mountpoint data
+2025-10-21T06:06:07.1372531Z Nested mountpoint volatile/logs
+2025-10-21T06:06:07.1405963Z Nested mountpoint 
+2025-10-21T06:06:07.1460542Z Nested mountpoint 
+2025-10-21T06:06:07.1649282Z Nested mountpoint 
+2025-10-21T06:06:07.1683621Z Nested mountpoint 
+2025-10-21T06:06:07.4619080Z Creating container.
+2025-10-21T06:06:07.4622498Z Creating pipes for streaming container io.
+2025-10-21T06:06:07.4690578Z Creating stdout named pipe at /podr/container/pipe/74708adda28b_ecommerce-backend-1761025938/stdout_cb700d58fb5a41ba99b4feb1d6c234e7.
+2025-10-21T06:06:07.4695559Z Successfully created stdout named pipe at: /podr/container/pipe/74708adda28b_ecommerce-backend-1761025938/stdout_cb700d58fb5a41ba99b4feb1d6c234e7.
+2025-10-21T06:06:07.4696749Z Opening named pipe /podr/container/pipe/74708adda28b_ecommerce-backend-1761025938/stdout_cb700d58fb5a41ba99b4feb1d6c234e7 for reading in non-blocking mode.
+2025-10-21T06:06:07.4700554Z Successfully opened named pipe: /podr/container/pipe/74708adda28b_ecommerce-backend-1761025938/stdout_cb700d58fb5a41ba99b4feb1d6c234e7.
+2025-10-21T06:06:07.4701661Z Successfully removed non-blocking flag from /podr/container/pipe/74708adda28b_ecommerce-backend-1761025938/stdout_cb700d58fb5a41ba99b4feb1d6c234e7.
+2025-10-21T06:06:07.4702923Z Creating stderr named pipe at /podr/container/pipe/74708adda28b_ecommerce-backend-1761025938/stderr_ddf770cadf2844679dc33e292586e0d7.
+2025-10-21T06:06:07.4704677Z Successfully created stderr named pipe at: /podr/container/pipe/74708adda28b_ecommerce-backend-1761025938/stderr_ddf770cadf2844679dc33e292586e0d7.
+2025-10-21T06:06:07.4705736Z Opening named pipe /podr/container/pipe/74708adda28b_ecommerce-backend-1761025938/stderr_ddf770cadf2844679dc33e292586e0d7 for reading in non-blocking mode.
+2025-10-21T06:06:07.4707009Z Successfully opened named pipe: /podr/container/pipe/74708adda28b_ecommerce-backend-1761025938/stderr_ddf770cadf2844679dc33e292586e0d7.
+2025-10-21T06:06:07.4708600Z Successfully removed non-blocking flag from /podr/container/pipe/74708adda28b_ecommerce-backend-1761025938/stderr_ddf770cadf2844679dc33e292586e0d7.
+2025-10-21T06:06:07.4709921Z Creating container with image: appsvc/node:20-lts_20250724.2.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20250724.2.tuxprod
+2025-10-21T06:06:07.7308339Z Starting container: 74708adda28b_ecommerce-backend-1761025938.
+2025-10-21T06:06:07.7805160Z Starting watchers and probes.
+2025-10-21T06:06:07.7877681Z Starting metrics collection.
+2025-10-21T06:06:07.7893168Z Container is running.
+2025-10-21T06:06:07.8512009Z Container start method finished after 2092 ms.
+2025-10-21T06:06:13.6599744Z Container has finished running with exit code: 1.
+2025-10-21T06:06:13.6601153Z Container is terminating. Grace period: 5 seconds.
+2025-10-21T06:06:13.6651908Z Stop and delete container. Retry count = 0
+2025-10-21T06:06:13.6671345Z Stopping container: 74708adda28b_ecommerce-backend-1761025938.
+2025-10-21T06:06:13.6974374Z Deleting container: 74708adda28b_ecommerce-backend-1761025938. Retry count = 0
+2025-10-21T06:06:13.8248131Z Container spec TerminationMessagePolicy  path 
+2025-10-21T06:06:13.8250674Z Container is terminated. Total time elapsed: 164 ms.
+2025-10-21T06:06:13.8276434Z Site container: ecommerce-backend-1761025938 terminated during site startup.
+2025-10-21T06:06:13.8300630Z Site startup probe failed after 5.9731844 seconds.
+2025-10-21T06:06:13.8323571Z Failed to start site. Revert by stopping site.
+2025-10-21T06:06:13.8407580Z Site: ecommerce-backend-1761025938 stopped.
+2025-10-21T06:06:14.2074935Z Site: ecommerce-backend-1761025938 will be blocked for 1 minutes till 10/21/2025 06:07:14
+2025-10-21T06:06:19.3179716Z Start site prohibitted because the site is being blocked.
+2025-10-21T06:06:24.4853270Z Start site prohibitted because the site is being blocked.
+2025-10-21T06:06:29.6103029Z Start site prohibitted because the site is being blocked.
+2025-10-21T06:06:34.7516090Z Start site prohibitted because the site is being blocked.
+2025-10-21T06:06:39.8719159Z Start site prohibitted because the site is being blocked.
+2025-10-21T06:06:44.9293293Z Start site prohibitted because the site is being blocked.
+2025-10-21T06:06:50.0058185Z Start site prohibitted because the site is being blocked.
+2025-10-21T06:06:55.0926723Z Start site prohibitted because the site is being blocked.
+2025-10-21T06:07:00.1851791Z Start site prohibitted because the site is being blocked.
+2025-10-21T06:07:05.5068844Z Start site prohibitted because the site is being blocked.
+2025-10-21T06:07:10.7468809Z Start site prohibitted because the site is being blocked.
+2025-10-21T06:07:14.2419290Z Site: ecommerce-backend-1761025938 is unblocked.
+2025-10-21T06:07:24.5671145Z Container start method called.
+2025-10-21T06:07:24.6204134Z Establishing network.
+2025-10-21T06:07:24.6486471Z Pulling image: appsvc/node:20-lts_20250724.2.tuxprod.
+2025-10-21T06:07:36.7843985Z Container is starting.
+2025-10-21T06:07:36.7949640Z Establishing user namespace if not established already.
+2025-10-21T06:07:36.7987615Z Establishing network if not established already.
+2025-10-21T06:07:36.7991787Z Mounting volumes.
+2025-10-21T06:07:36.8066991Z Nested mountpoint data
+2025-10-21T06:07:36.8501598Z Nested mountpoint volatile/logs
+2025-10-21T06:07:36.8718563Z Nested mountpoint 
+2025-10-21T06:07:36.8726375Z Nested mountpoint 
+2025-10-21T06:07:36.9260947Z Nested mountpoint 
+2025-10-21T06:07:37.0796662Z Nested mountpoint 
+2025-10-21T06:07:39.9992677Z Creating container.
+2025-10-21T06:07:39.9996318Z Creating pipes for streaming container io.
+2025-10-21T06:07:39.9997866Z Creating stdout named pipe at /podr/container/pipe/cc2c3f662161_ecommerce-backend-1761025938/stdout_c095dd5514684431b4cccdb58fd7bb2b.
+2025-10-21T06:07:40.0032071Z Successfully created stdout named pipe at: /podr/container/pipe/cc2c3f662161_ecommerce-backend-1761025938/stdout_c095dd5514684431b4cccdb58fd7bb2b.
+2025-10-21T06:07:40.0033589Z Opening named pipe /podr/container/pipe/cc2c3f662161_ecommerce-backend-1761025938/stdout_c095dd5514684431b4cccdb58fd7bb2b for reading in non-blocking mode.
+2025-10-21T06:07:40.0035098Z Successfully opened named pipe: /podr/container/pipe/cc2c3f662161_ecommerce-backend-1761025938/stdout_c095dd5514684431b4cccdb58fd7bb2b.
+2025-10-21T06:07:40.0036545Z Successfully removed non-blocking flag from /podr/container/pipe/cc2c3f662161_ecommerce-backend-1761025938/stdout_c095dd5514684431b4cccdb58fd7bb2b.
+2025-10-21T06:07:40.0037794Z Creating stderr named pipe at /podr/container/pipe/cc2c3f662161_ecommerce-backend-1761025938/stderr_22232a1197664ff99213d956b278fc7d.
+2025-10-21T06:07:40.0039971Z Successfully created stderr named pipe at: /podr/container/pipe/cc2c3f662161_ecommerce-backend-1761025938/stderr_22232a1197664ff99213d956b278fc7d.
+2025-10-21T06:07:40.0070812Z Opening named pipe /podr/container/pipe/cc2c3f662161_ecommerce-backend-1761025938/stderr_22232a1197664ff99213d956b278fc7d for reading in non-blocking mode.
+2025-10-21T06:07:40.0072930Z Successfully opened named pipe: /podr/container/pipe/cc2c3f662161_ecommerce-backend-1761025938/stderr_22232a1197664ff99213d956b278fc7d.
+2025-10-21T06:07:40.0074106Z Successfully removed non-blocking flag from /podr/container/pipe/cc2c3f662161_ecommerce-backend-1761025938/stderr_22232a1197664ff99213d956b278fc7d.
+2025-10-21T06:07:40.0078686Z Creating container with image: appsvc/node:20-lts_20250724.2.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20250724.2.tuxprod
+2025-10-21T06:07:43.0024564Z Starting container: cc2c3f662161_ecommerce-backend-1761025938.
+2025-10-21T06:07:43.4943091Z Starting watchers and probes.
+2025-10-21T06:07:43.5088996Z Starting metrics collection.
+2025-10-21T06:07:43.5091221Z Container is running.
+2025-10-21T06:07:44.0732171Z Container start method finished after 19481 ms.
+2025-10-21T06:08:04.7038798Z Container has finished running with exit code: 1.
+2025-10-21T06:08:04.7040714Z Container is terminating. Grace period: 5 seconds.
+2025-10-21T06:08:04.7044029Z Stop and delete container. Retry count = 0
+2025-10-21T06:08:04.7055965Z Stopping container: cc2c3f662161_ecommerce-backend-1761025938.
+2025-10-21T06:08:04.7239762Z Deleting container: cc2c3f662161_ecommerce-backend-1761025938. Retry count = 0
+2025-10-21T06:08:04.8425782Z Container spec TerminationMessagePolicy  path 
+2025-10-21T06:08:04.8428648Z Container is terminated. Total time elapsed: 138 ms.
+2025-10-21T06:08:04.8430070Z Site container: ecommerce-backend-1761025938 terminated during site startup.
+2025-10-21T06:08:04.8433207Z Site startup probe failed after 20.7692871 seconds.
+2025-10-21T06:08:04.8486408Z Failed to start site. Revert by stopping site.
+2025-10-21T06:08:04.8500209Z Site: ecommerce-backend-1761025938 stopped.

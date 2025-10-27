@@ -1,0 +1,359 @@
+2025-10-21T05:59:10.090661628Z    _____                               
+2025-10-21T05:59:10.090763969Z   /  _  \ __________ _________   ____  
+2025-10-21T05:59:10.090770691Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-10-21T05:59:10.090775431Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-10-21T05:59:10.090779408Z \____|__  /_____ \____/ |__|    \___  >
+2025-10-21T05:59:10.090783676Z         \/      \/                  \/ 
+2025-10-21T05:59:10.090787603Z A P P   S E R V I C E   O N   L I N U X
+2025-10-21T05:59:10.090790979Z 
+2025-10-21T05:59:10.090794346Z Documentation: http://aka.ms/webapp-linux
+2025-10-21T05:59:10.090797722Z NodeJS quickstart: https://aka.ms/node-qs
+2025-10-21T05:59:10.090801148Z NodeJS Version : v20.19.3
+2025-10-21T05:59:10.090804294Z Note: Any data outside '/home' is not persisted
+2025-10-21T05:59:10.090807680Z 
+2025-10-21T05:59:11.162339116Z Starting OpenBSD Secure Shell server: sshd.
+2025-10-21T05:59:11.176577230Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-10-21T05:59:11.201826819Z Updating certificates in /etc/ssl/certs...
+2025-10-21T05:59:14.867430247Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2025-10-21T05:59:14.881114304Z 4 added, 0 removed; done.
+2025-10-21T05:59:14.881377745Z Running hooks in /etc/ca-certificates/update.d...
+2025-10-21T05:59:14.883855460Z done.
+2025-10-21T05:59:14.891868597Z CA certificates copied and updated successfully.
+2025-10-21T05:59:14.946872802Z Starting periodic command scheduler: cron.
+2025-10-21T05:59:14.999101109Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-10-21T05:59:14.999132377Z Could not find operation ID in manifest. Generating an operation id...
+2025-10-21T05:59:14.999467890Z Build Operation ID: 26a81557-388a-4016-8868-301f5ecf07f0
+2025-10-21T05:59:15.084163963Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2025-10-21T05:59:15.092016478Z Writing output script to '/opt/startup/startup.sh'
+2025-10-21T05:59:15.113670036Z Running #!/bin/sh
+2025-10-21T05:59:15.114596563Z 
+2025-10-21T05:59:15.114603636Z # Enter the source directory to make sure the script runs where the user expects
+2025-10-21T05:59:15.114609116Z cd "/home/site/wwwroot"
+2025-10-21T05:59:15.114614426Z 
+2025-10-21T05:59:15.114620638Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2025-10-21T05:59:15.114713421Z if [ -z "$PORT" ]; then
+2025-10-21T05:59:15.114721165Z 		export PORT=8080
+2025-10-21T05:59:15.114726696Z fi
+2025-10-21T05:59:15.114731444Z 
+2025-10-21T05:59:15.114736524Z npm start
+2025-10-21T05:59:15.699539473Z npm info using npm@10.9.2
+2025-10-21T05:59:15.700399185Z npm info using node@v20.19.3
+2025-10-21T05:59:16.719547345Z 
+2025-10-21T05:59:16.719579485Z > ecommerce-backend@1.0.0 start
+2025-10-21T05:59:16.719585867Z > node dist/app.js
+2025-10-21T05:59:16.719590125Z 
+2025-10-21T05:59:16.816579978Z node:internal/modules/cjs/loader:1215
+2025-10-21T05:59:16.816603552Z   throw err;
+2025-10-21T05:59:16.818672057Z   ^
+2025-10-21T05:59:16.818684951Z 
+2025-10-21T05:59:16.818689970Z Error: Cannot find module 'express'
+2025-10-21T05:59:16.818694158Z Require stack:
+2025-10-21T05:59:16.818698145Z - /home/site/wwwroot/dist/app.js
+2025-10-21T05:59:16.818701912Z     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+2025-10-21T05:59:16.818705720Z     at Module._load (node:internal/modules/cjs/loader:1043:27)
+2025-10-21T05:59:16.818709516Z     at Module.require (node:internal/modules/cjs/loader:1298:19)
+2025-10-21T05:59:16.818713444Z     at require (node:internal/modules/helpers:182:18)
+2025-10-21T05:59:16.818717772Z     at Object.<anonymous> (/home/site/wwwroot/dist/app.js:6:35)
+2025-10-21T05:59:16.818722190Z     at Module._compile (node:internal/modules/cjs/loader:1529:14)
+2025-10-21T05:59:16.818726298Z     at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+2025-10-21T05:59:16.818730245Z     at Module.load (node:internal/modules/cjs/loader:1275:32)
+2025-10-21T05:59:16.818734243Z     at Module._load (node:internal/modules/cjs/loader:1096:12)
+2025-10-21T05:59:16.818738290Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12) {
+2025-10-21T05:59:16.818742999Z   code: 'MODULE_NOT_FOUND',
+2025-10-21T05:59:16.818747437Z   requireStack: [ '/home/site/wwwroot/dist/app.js' ]
+2025-10-21T05:59:16.818751695Z }
+2025-10-21T05:59:16.818756183Z 
+2025-10-21T05:59:16.818760812Z Node.js v20.19.3
+2025-10-21T05:59:16.862974795Z npm http fetch GET 200 https://registry.npmjs.org/npm 222ms
+2025-10-21T05:59:16.871534478Z npm notice
+2025-10-21T05:59:16.871592306Z npm notice New major version of npm available! 10.9.2 -> 11.6.2
+2025-10-21T05:59:16.871599089Z npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+2025-10-21T05:59:16.871603287Z npm notice To update run: npm install -g npm@11.6.2
+2025-10-21T05:59:16.871607034Z npm notice
+
+2025-10-21T05:59:30.167370900Z    _____                               
+2025-10-21T05:59:30.167416035Z   /  _  \ __________ _________   ____  
+2025-10-21T05:59:30.167420152Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-10-21T05:59:30.167451440Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-10-21T05:59:30.167460187Z \____|__  /_____ \____/ |__|    \___  >
+2025-10-21T05:59:30.167463323Z         \/      \/                  \/ 
+2025-10-21T05:59:30.167466037Z A P P   S E R V I C E   O N   L I N U X
+2025-10-21T05:59:30.167468482Z 
+2025-10-21T05:59:30.167470866Z Documentation: http://aka.ms/webapp-linux
+2025-10-21T05:59:30.167473211Z NodeJS quickstart: https://aka.ms/node-qs
+2025-10-21T05:59:30.167475545Z NodeJS Version : v20.19.3
+2025-10-21T05:59:30.167477870Z Note: Any data outside '/home' is not persisted
+2025-10-21T05:59:30.167480224Z 
+2025-10-21T05:59:31.467843361Z Starting OpenBSD Secure Shell server: sshd.
+2025-10-21T05:59:31.471608018Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-10-21T05:59:31.480944255Z Updating certificates in /etc/ssl/certs...
+2025-10-21T05:59:34.300346916Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2025-10-21T05:59:34.312005200Z 4 added, 0 removed; done.
+2025-10-21T05:59:34.312518199Z Running hooks in /etc/ca-certificates/update.d...
+2025-10-21T05:59:34.315415645Z done.
+2025-10-21T05:59:34.325598572Z CA certificates copied and updated successfully.
+2025-10-21T05:59:34.547189981Z Starting periodic command scheduler: cron.
+2025-10-21T05:59:34.558153861Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-10-21T05:59:34.558482073Z Could not find operation ID in manifest. Generating an operation id...
+2025-10-21T05:59:34.558492552Z Build Operation ID: a96397b0-e300-46e1-8a19-ce5ac21e6e1f
+2025-10-21T05:59:34.624804480Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2025-10-21T05:59:34.626291211Z Writing output script to '/opt/startup/startup.sh'
+2025-10-21T05:59:34.652349597Z Running #!/bin/sh
+2025-10-21T05:59:34.652409699Z 
+2025-10-21T05:59:34.652417594Z # Enter the source directory to make sure the script runs where the user expects
+2025-10-21T05:59:34.652423795Z cd "/home/site/wwwroot"
+2025-10-21T05:59:34.652429847Z 
+2025-10-21T05:59:34.652435417Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2025-10-21T05:59:34.652441057Z if [ -z "$PORT" ]; then
+2025-10-21T05:59:34.652446658Z 		export PORT=8080
+2025-10-21T05:59:34.652452679Z fi
+2025-10-21T05:59:34.652457939Z 
+2025-10-21T05:59:34.653160067Z npm start
+2025-10-21T05:59:34.856852602Z npm info using npm@10.9.2
+2025-10-21T05:59:34.857150377Z npm info using node@v20.19.3
+2025-10-21T05:59:35.332841642Z 
+2025-10-21T05:59:35.332872881Z > ecommerce-backend@1.0.0 start
+2025-10-21T05:59:35.332878060Z > node dist/app.js
+2025-10-21T05:59:35.332882278Z 
+2025-10-21T05:59:35.411122807Z node:internal/modules/cjs/loader:1215
+2025-10-21T05:59:35.411153424Z   throw err;
+2025-10-21T05:59:35.411972707Z   ^
+2025-10-21T05:59:35.411982596Z 
+2025-10-21T05:59:35.411987245Z Error: Cannot find module 'express'
+2025-10-21T05:59:35.411991493Z Require stack:
+2025-10-21T05:59:35.411995490Z - /home/site/wwwroot/dist/app.js
+2025-10-21T05:59:35.411999798Z     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+2025-10-21T05:59:35.412004397Z     at Module._load (node:internal/modules/cjs/loader:1043:27)
+2025-10-21T05:59:35.412009226Z     at Module.require (node:internal/modules/cjs/loader:1298:19)
+2025-10-21T05:59:35.412013954Z     at require (node:internal/modules/helpers:182:18)
+2025-10-21T05:59:35.412018553Z     at Object.<anonymous> (/home/site/wwwroot/dist/app.js:6:35)
+2025-10-21T05:59:35.412023492Z     at Module._compile (node:internal/modules/cjs/loader:1529:14)
+2025-10-21T05:59:35.412027800Z     at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+2025-10-21T05:59:35.412032378Z     at Module.load (node:internal/modules/cjs/loader:1275:32)
+2025-10-21T05:59:35.412036476Z     at Module._load (node:internal/modules/cjs/loader:1096:12)
+2025-10-21T05:59:35.412040694Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12) {
+2025-10-21T05:59:35.412045032Z   code: 'MODULE_NOT_FOUND',
+2025-10-21T05:59:35.412048799Z   requireStack: [ '/home/site/wwwroot/dist/app.js' ]
+2025-10-21T05:59:35.412052687Z }
+2025-10-21T05:59:35.412058397Z 
+2025-10-21T05:59:35.412062084Z Node.js v20.19.3
+
+2025-10-21T05:59:46.880073607Z    _____                               
+2025-10-21T05:59:46.880117949Z   /  _  \ __________ _________   ____  
+2025-10-21T05:59:46.880124130Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-10-21T05:59:46.880128479Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-10-21T05:59:46.880132797Z \____|__  /_____ \____/ |__|    \___  >
+2025-10-21T05:59:46.880135943Z         \/      \/                  \/ 
+2025-10-21T05:59:46.880138748Z A P P   S E R V I C E   O N   L I N U X
+2025-10-21T05:59:46.880141233Z 
+2025-10-21T05:59:46.880143747Z Documentation: http://aka.ms/webapp-linux
+2025-10-21T05:59:46.880146202Z NodeJS quickstart: https://aka.ms/node-qs
+2025-10-21T05:59:46.880148616Z NodeJS Version : v20.19.3
+2025-10-21T05:59:46.880150991Z Note: Any data outside '/home' is not persisted
+2025-10-21T05:59:46.880153415Z 
+2025-10-21T05:59:47.708029171Z Starting OpenBSD Secure Shell server: sshd.
+2025-10-21T05:59:47.712161005Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-10-21T05:59:47.722923022Z Updating certificates in /etc/ssl/certs...
+2025-10-21T05:59:50.329848426Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2025-10-21T05:59:50.358328657Z 4 added, 0 removed; done.
+2025-10-21T05:59:50.358741886Z Running hooks in /etc/ca-certificates/update.d...
+2025-10-21T05:59:50.372424072Z done.
+2025-10-21T05:59:50.393662043Z CA certificates copied and updated successfully.
+2025-10-21T05:59:50.552222705Z Starting periodic command scheduler: cron.
+2025-10-21T05:59:50.570342798Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-10-21T05:59:50.573655559Z Could not find operation ID in manifest. Generating an operation id...
+2025-10-21T05:59:50.573679473Z Build Operation ID: 726a9a58-17f1-4ad5-b803-ae4571f68183
+2025-10-21T05:59:50.692747633Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2025-10-21T05:59:50.700657885Z Writing output script to '/opt/startup/startup.sh'
+2025-10-21T05:59:50.712274165Z Running #!/bin/sh
+2025-10-21T05:59:50.712298520Z 
+2025-10-21T05:59:50.713873053Z # Enter the source directory to make sure the script runs where the user expects
+2025-10-21T05:59:50.713888642Z cd "/home/site/wwwroot"
+2025-10-21T05:59:50.713895375Z 
+2025-10-21T05:59:50.714234196Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2025-10-21T05:59:50.714245226Z if [ -z "$PORT" ]; then
+2025-10-21T05:59:50.714251328Z 		export PORT=8080
+2025-10-21T05:59:50.714257319Z fi
+2025-10-21T05:59:50.714262779Z 
+2025-10-21T05:59:50.715301444Z npm start
+2025-10-21T05:59:50.932781684Z npm info using npm@10.9.2
+2025-10-21T05:59:50.936690194Z npm info using node@v20.19.3
+2025-10-21T05:59:51.460596908Z 
+2025-10-21T05:59:51.460680724Z > ecommerce-backend@1.0.0 start
+2025-10-21T05:59:51.460688348Z > node dist/app.js
+2025-10-21T05:59:51.460693108Z 
+2025-10-21T05:59:51.579005033Z node:internal/modules/cjs/loader:1215
+2025-10-21T05:59:51.580599242Z   throw err;
+2025-10-21T05:59:51.580615853Z   ^
+2025-10-21T05:59:51.580621053Z 
+2025-10-21T05:59:51.580625461Z Error: Cannot find module 'express'
+2025-10-21T05:59:51.580629549Z Require stack:
+2025-10-21T05:59:51.580633366Z - /home/site/wwwroot/dist/app.js
+2025-10-21T05:59:51.586265757Z     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+2025-10-21T05:59:51.586284652Z     at Module._load (node:internal/modules/cjs/loader:1043:27)
+2025-10-21T05:59:51.586289832Z     at Module.require (node:internal/modules/cjs/loader:1298:19)
+2025-10-21T05:59:51.586293980Z     at require (node:internal/modules/helpers:182:18)
+2025-10-21T05:59:51.586297767Z     at Object.<anonymous> (/home/site/wwwroot/dist/app.js:6:35)
+2025-10-21T05:59:51.586302205Z     at Module._compile (node:internal/modules/cjs/loader:1529:14)
+2025-10-21T05:59:51.589454597Z     at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+2025-10-21T05:59:51.589467391Z     at Module.load (node:internal/modules/cjs/loader:1275:32)
+2025-10-21T05:59:51.589472230Z     at Module._load (node:internal/modules/cjs/loader:1096:12)
+2025-10-21T05:59:51.589476498Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12) {
+2025-10-21T05:59:51.589480265Z   code: 'MODULE_NOT_FOUND',
+2025-10-21T05:59:51.589483851Z   requireStack: [ '/home/site/wwwroot/dist/app.js' ]
+2025-10-21T05:59:51.589487418Z }
+2025-10-21T05:59:51.589490945Z 
+2025-10-21T05:59:51.589494722Z Node.js v20.19.3
+2025-10-21T05:59:51.635191099Z npm http fetch GET 200 https://registry.npmjs.org/npm 244ms
+2025-10-21T05:59:51.641675938Z npm notice
+2025-10-21T05:59:51.641735539Z npm notice New major version of npm available! 10.9.2 -> 11.6.2
+2025-10-21T05:59:51.641740708Z npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+2025-10-21T05:59:51.641744576Z npm notice To update run: npm install -g npm@11.6.2
+2025-10-21T05:59:51.641748222Z npm notice
+
+2025-10-21T06:00:49.578866883Z    _____                               
+2025-10-21T06:00:49.578908209Z   /  _  \ __________ _________   ____  
+2025-10-21T06:00:49.578913379Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-10-21T06:00:49.578917317Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-10-21T06:00:49.578920803Z \____|__  /_____ \____/ |__|    \___  >
+2025-10-21T06:00:49.578924470Z         \/      \/                  \/ 
+2025-10-21T06:00:49.578928437Z A P P   S E R V I C E   O N   L I N U X
+2025-10-21T06:00:49.578931964Z 
+2025-10-21T06:00:49.578935721Z Documentation: http://aka.ms/webapp-linux
+2025-10-21T06:00:49.578939468Z NodeJS quickstart: https://aka.ms/node-qs
+2025-10-21T06:00:49.578943175Z NodeJS Version : v20.19.3
+2025-10-21T06:00:49.578947062Z Note: Any data outside '/home' is not persisted
+2025-10-21T06:00:49.578950648Z 
+2025-10-21T06:00:50.521266190Z Starting OpenBSD Secure Shell server: sshd.
+2025-10-21T06:00:50.534269479Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-10-21T06:00:50.558000755Z Updating certificates in /etc/ssl/certs...
+2025-10-21T06:00:53.930878891Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2025-10-21T06:00:53.950117147Z 4 added, 0 removed; done.
+2025-10-21T06:00:53.950346224Z Running hooks in /etc/ca-certificates/update.d...
+2025-10-21T06:00:53.953102680Z done.
+2025-10-21T06:00:53.964300562Z CA certificates copied and updated successfully.
+2025-10-21T06:00:54.019816617Z Starting periodic command scheduler: cron.
+2025-10-21T06:00:54.076993901Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-10-21T06:00:54.077013237Z Could not find operation ID in manifest. Generating an operation id...
+2025-10-21T06:00:54.077016734Z Build Operation ID: cc16721b-cd61-473f-bcd2-87ed5b4baef1
+2025-10-21T06:00:54.148972433Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2025-10-21T06:00:54.150263498Z Writing output script to '/opt/startup/startup.sh'
+2025-10-21T06:00:54.161003961Z Running #!/bin/sh
+2025-10-21T06:00:54.161075594Z 
+2025-10-21T06:00:54.161080574Z # Enter the source directory to make sure the script runs where the user expects
+2025-10-21T06:00:54.161084721Z cd "/home/site/wwwroot"
+2025-10-21T06:00:54.161088428Z 
+2025-10-21T06:00:54.161091965Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2025-10-21T06:00:54.161095722Z if [ -z "$PORT" ]; then
+2025-10-21T06:00:54.161099308Z 		export PORT=8080
+2025-10-21T06:00:54.161103416Z fi
+2025-10-21T06:00:54.161106963Z 
+2025-10-21T06:00:54.161571278Z npm start
+2025-10-21T06:00:54.739499683Z npm info using npm@10.9.2
+2025-10-21T06:00:54.739588619Z npm info using node@v20.19.3
+2025-10-21T06:00:55.863095014Z 
+2025-10-21T06:00:55.863127345Z > ecommerce-backend@1.0.0 start
+2025-10-21T06:00:55.863133937Z > node dist/app.js
+2025-10-21T06:00:55.863138635Z 
+2025-10-21T06:00:56.017818000Z node:internal/modules/cjs/loader:1215
+2025-10-21T06:00:56.018339331Z   throw err;
+2025-10-21T06:00:56.018345903Z   ^
+2025-10-21T06:00:56.018349700Z 
+2025-10-21T06:00:56.018352956Z Error: Cannot find module 'express'
+2025-10-21T06:00:56.018356303Z Require stack:
+2025-10-21T06:00:56.018359589Z - /home/site/wwwroot/dist/app.js
+2025-10-21T06:00:56.018363105Z     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+2025-10-21T06:00:56.018366542Z     at Module._load (node:internal/modules/cjs/loader:1043:27)
+2025-10-21T06:00:56.018369888Z     at Module.require (node:internal/modules/cjs/loader:1298:19)
+2025-10-21T06:00:56.018373324Z     at require (node:internal/modules/helpers:182:18)
+2025-10-21T06:00:56.018376771Z     at Object.<anonymous> (/home/site/wwwroot/dist/app.js:6:35)
+2025-10-21T06:00:56.018879417Z     at Module._compile (node:internal/modules/cjs/loader:1529:14)
+2025-10-21T06:00:56.018886430Z     at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+2025-10-21T06:00:56.018890167Z     at Module.load (node:internal/modules/cjs/loader:1275:32)
+2025-10-21T06:00:56.018894435Z     at Module._load (node:internal/modules/cjs/loader:1096:12)
+2025-10-21T06:00:56.018898893Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12) {
+2025-10-21T06:00:56.018903181Z   code: 'MODULE_NOT_FOUND',
+2025-10-21T06:00:56.018907670Z   requireStack: [ '/home/site/wwwroot/dist/app.js' ]
+2025-10-21T06:00:56.018911988Z }
+2025-10-21T06:00:56.018915975Z 
+2025-10-21T06:00:56.018919552Z Node.js v20.19.3
+2025-10-21T06:00:56.108280123Z npm http fetch GET 200 https://registry.npmjs.org/npm 341ms
+2025-10-21T06:00:56.114730631Z npm notice
+2025-10-21T06:00:56.114796434Z npm notice New major version of npm available! 10.9.2 -> 11.6.2
+2025-10-21T06:00:56.114802174Z npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+2025-10-21T06:00:56.114806622Z npm notice To update run: npm install -g npm@11.6.2
+2025-10-21T06:00:56.114810740Z npm notice
+
+2025-10-21T06:03:15.760446762Z    _____                               
+2025-10-21T06:03:15.760545828Z   /  _  \ __________ _________   ____  
+2025-10-21T06:03:15.760551538Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-10-21T06:03:15.760555566Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-10-21T06:03:15.760559563Z \____|__  /_____ \____/ |__|    \___  >
+2025-10-21T06:03:15.760563691Z         \/      \/                  \/ 
+2025-10-21T06:03:15.760567588Z A P P   S E R V I C E   O N   L I N U X
+2025-10-21T06:03:15.760571345Z 
+2025-10-21T06:03:15.760575002Z Documentation: http://aka.ms/webapp-linux
+2025-10-21T06:03:15.760578849Z NodeJS quickstart: https://aka.ms/node-qs
+2025-10-21T06:03:15.760582647Z NodeJS Version : v20.19.3
+2025-10-21T06:03:15.760586303Z Note: Any data outside '/home' is not persisted
+2025-10-21T06:03:15.760590110Z 
+2025-10-21T06:03:16.725515712Z Starting OpenBSD Secure Shell server: sshd.
+2025-10-21T06:03:16.748877138Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-10-21T06:03:16.767804654Z Updating certificates in /etc/ssl/certs...
+2025-10-21T06:03:19.943141910Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2025-10-21T06:03:19.957771182Z 4 added, 0 removed; done.
+2025-10-21T06:03:19.957941470Z Running hooks in /etc/ca-certificates/update.d...
+2025-10-21T06:03:19.960848574Z done.
+2025-10-21T06:03:19.971820871Z CA certificates copied and updated successfully.
+2025-10-21T06:03:20.023284924Z Starting periodic command scheduler: cron.
+2025-10-21T06:03:20.031824913Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-10-21T06:03:20.033481134Z Could not find operation ID in manifest. Generating an operation id...
+2025-10-21T06:03:20.034740989Z Build Operation ID: f79560fd-599d-484f-9952-01ff06820761
+2025-10-21T06:03:20.106565993Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2025-10-21T06:03:20.110526320Z Writing output script to '/opt/startup/startup.sh'
+2025-10-21T06:03:20.137711330Z Running #!/bin/sh
+2025-10-21T06:03:20.137734874Z 
+2025-10-21T06:03:20.137740735Z # Enter the source directory to make sure the script runs where the user expects
+2025-10-21T06:03:20.137746286Z cd "/home/site/wwwroot"
+2025-10-21T06:03:20.137751485Z 
+2025-10-21T06:03:20.137756324Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2025-10-21T06:03:20.137761354Z if [ -z "$PORT" ]; then
+2025-10-21T06:03:20.137766573Z 		export PORT=8080
+2025-10-21T06:03:20.137771783Z fi
+2025-10-21T06:03:20.137776562Z 
+2025-10-21T06:03:20.137784678Z npm start
+2025-10-21T06:03:20.460861592Z npm info using npm@10.9.2
+2025-10-21T06:03:20.460889444Z npm info using node@v20.19.3
+2025-10-21T06:03:21.784768316Z 
+2025-10-21T06:03:21.784800287Z > ecommerce-backend@1.0.0 start
+2025-10-21T06:03:21.784805546Z > node dist/app.js
+2025-10-21T06:03:21.784809704Z 
+2025-10-21T06:03:21.863691145Z node:internal/modules/cjs/loader:1215
+2025-10-21T06:03:21.863718927Z   throw err;
+2025-10-21T06:03:21.863752450Z   ^
+2025-10-21T06:03:21.863756237Z 
+2025-10-21T06:03:21.864187667Z Error: Cannot find module 'express'
+2025-10-21T06:03:21.864194610Z Require stack:
+2025-10-21T06:03:21.864198788Z - /home/site/wwwroot/dist/app.js
+2025-10-21T06:03:21.864202415Z     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+2025-10-21T06:03:21.864206032Z     at Module._load (node:internal/modules/cjs/loader:1043:27)
+2025-10-21T06:03:21.864209538Z     at Module.require (node:internal/modules/cjs/loader:1298:19)
+2025-10-21T06:03:21.864213405Z     at require (node:internal/modules/helpers:182:18)
+2025-10-21T06:03:21.864217092Z     at Object.<anonymous> (/home/site/wwwroot/dist/app.js:6:35)
+2025-10-21T06:03:21.864221040Z     at Module._compile (node:internal/modules/cjs/loader:1529:14)
+2025-10-21T06:03:21.864224446Z     at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+2025-10-21T06:03:21.864227933Z     at Module.load (node:internal/modules/cjs/loader:1275:32)
+2025-10-21T06:03:21.864231279Z     at Module._load (node:internal/modules/cjs/loader:1096:12)
+2025-10-21T06:03:21.864234595Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12) {
+2025-10-21T06:03:21.864237962Z   code: 'MODULE_NOT_FOUND',
+2025-10-21T06:03:21.864241158Z   requireStack: [ '/home/site/wwwroot/dist/app.js' ]
+2025-10-21T06:03:21.864244444Z }
+2025-10-21T06:03:21.864247920Z 
+2025-10-21T06:03:21.864251236Z Node.js v20.19.3
+2025-10-21T06:03:21.979221201Z npm http fetch GET 200 https://registry.npmjs.org/npm 264ms
+2025-10-21T06:03:21.984811188Z npm notice
+2025-10-21T06:03:21.984828791Z npm notice New major version of npm available! 10.9.2 -> 11.6.2
+2025-10-21T06:03:21.984834401Z npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+2025-10-21T06:03:21.984838770Z npm notice To update run: npm install -g npm@11.6.2
+2025-10-21T06:03:21.984843208Z npm notice
+
