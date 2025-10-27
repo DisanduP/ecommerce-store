@@ -1,0 +1,109 @@
+<story-context id="bmad/bmm/workflows/4-implementation/story-context/template" v="1.0">
+  <metadata>
+    <epicId>1</epicId>
+    <storyId>1</storyId>
+    <title>User Registration</title>
+    <status>Draft</status>
+    <generatedAt>2025-10-21</generatedAt>
+    <generator>BMAD Story Context Workflow</generator>
+    <sourceStoryPath>docs/stories/story-1.1.md</sourceStoryPath>
+  </metadata>
+
+  <story>
+    <asA>new customer</asA>
+    <iWant>register an account</iWant>
+    <soThat>save my preferences and track orders</soThat>
+    <tasks>- Set up backend project structure and dependencies
+- Implement user registration endpoint
+- Create registration API route
+- Set up frontend project structure
+- Create registration form component
+- Implement API integration
+- Add routing and navigation</tasks>
+  </story>
+
+  <acceptanceCriteria>1. Registration form collects email, password, and basic profile information
+2. Email verification process to confirm account ownership
+3. Password strength validation and security requirements
+4. Successful registration creates user account in database</acceptanceCriteria>
+
+  <artifacts>
+    <docs>
+      <doc>
+        <path>docs/PRD.md</path>
+        <title>Product Requirements Document</title>
+        <section>Goals and Background Context</section>
+        <snippet>Provides goals for user registration and account management functionality.</snippet>
+      </doc>
+      <doc>
+        <path>docs/architecture.md</path>
+        <title>Decision Architecture</title>
+        <section>Technology Stack Details</section>
+        <snippet>Defines React frontend, Node.js/Express backend, SQLite database, and JWT authentication.</snippet>
+      </doc>
+      <doc>
+        <path>docs/architecture.md</path>
+        <title>Decision Architecture</title>
+        <section>API Contracts</section>
+        <snippet>Specifies authentication API endpoints including registration.</snippet>
+      </doc>
+      <doc>
+        <path>docs/epics.md</path>
+        <title>Epic Breakdown</title>
+        <section>Epic 1: User Authentication and Account Management</section>
+        <snippet>Detailed breakdown of user registration story with acceptance criteria.</snippet>
+      </doc>
+    </docs>
+    <code></code>
+    <dependencies>
+      <ecosystem name="nodejs">
+        <package name="express" version="^4.18.0">Web framework for backend API</package>
+        <package name="cors" version="^2.8.5">Cross-origin resource sharing</package>
+        <package name="helmet" version="^7.0.0">Security middleware</package>
+        <package name="dotenv" version="^16.0.0">Environment variables</package>
+        <package name="bcrypt" version="^5.1.0">Password hashing</package>
+        <package name="jsonwebtoken" version="^9.0.0">JWT token handling</package>
+        <package name="better-sqlite3" version="^8.0.0">SQLite database driver</package>
+      </ecosystem>
+      <ecosystem name="react">
+        <package name="react" version="^18.0.0">Frontend framework</package>
+        <package name="react-dom" version="^18.0.0">React DOM rendering</package>
+        <package name="axios" version="^1.0.0">HTTP client for API calls</package>
+        <package name="react-router-dom" version="^6.0.0">Client-side routing</package>
+      </ecosystem>
+    </dependencies>
+  </artifacts>
+
+  <constraints>- Backend: Node.js with Express, TypeScript, SQLite database
+- Authentication: JWT tokens with bcrypt password hashing
+- Frontend: React with TypeScript, Axios for API calls
+- Follow architecture patterns: RESTful API, consistent error handling
+- Database: SQLite with better-sqlite3 for file-based storage
+- API responses: { success: boolean, data?: any, error?: string }
+- Naming: snake_case for database, PascalCase for components, camelCase for variables</constraints>
+
+  <interfaces>
+    <interface>
+      <name>User Registration API</name>
+      <kind>REST endpoint</kind>
+      <signature>POST /api/auth/register</signature>
+      <path>ecommerce-backend/src/routes/auth.ts</path>
+    </interface>
+    <interface>
+      <name>User Model</name>
+      <kind>Database model</kind>
+      <signature>interface User { id: number; email: string; password_hash: string; name: string; created_at: string; }</signature>
+      <path>ecommerce-backend/src/models/User.ts</path>
+    </interface>
+  </interfaces>
+
+  <tests>
+    <standards>Unit tests for backend controllers and models using Jest. Integration tests for API endpoints. Frontend component tests using React Testing Library. E2E tests for critical user flows.</standards>
+    <locations>Backend: ecommerce-backend/src/__tests__/, Frontend: ecommerce-frontend/src/__tests__/</locations>
+    <ideas>- Test user registration with valid data creates account
+- Test registration with duplicate email fails
+- Test password validation requirements
+- Test API returns proper success/error responses
+- Test frontend form validation and submission</ideas>
+  </tests>
+</story-context>
